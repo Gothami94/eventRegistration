@@ -1,3 +1,6 @@
+<?php
+  defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -91,12 +94,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				    	<li><a href="blog.html">BLOG</a></li>
 				    	<li><a href="contact.html">CONTACT</a></li>
 				    	<div class="clear"></div>
-				    </ul>				    
+				    </ul>
 				 </div>
 			     <div class="clear"></div>
-		      </div>		   
+		      </div>
 		  </div>
-		<!------ Slider ------------>
+		<!--- Slider ------>
 		<div class="wrap">
 		  <div class="slider">
 	      	<div class="slider-wrapper theme-default">
@@ -110,7 +113,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	        </div>
    		</div>
    	  </div>
-		<!------End Slider ------------>
+		<!---End Slider ------------>
   </div>
      <div class="main">
      	<div class="wrap">
@@ -126,7 +129,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							<figure><span>02</span>January</figure>
 						</div>
 					</div></a>
-				</div>				
+				</div>
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 					<div class="listimg listimg_1_of_2">
@@ -138,7 +141,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div>
 				     </div>
 				     </a>
-				</div>				
+				</div>
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 					<div class="listimg listimg_1_of_2">
@@ -150,7 +153,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div>
 				    </div>
 				    </a>
-				</div>				
+				</div>
 			</div>
 			<!---728x90--->
 			 <div class="content_bottom">
@@ -214,7 +217,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
         </ul>
         <div class="footer-pic"><img src="images/foot-icon.png" alt=""></div>
         </div>
-    	<div class="clear"></div>        
+    	<div class="clear"></div>
       </div>
     </div>
     <div class="copy">
@@ -224,4 +227,3 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 <!-- Mirrored from p.w3layouts.com/demos/events_club/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 01:27:44 GMT -->
 </html>
-
