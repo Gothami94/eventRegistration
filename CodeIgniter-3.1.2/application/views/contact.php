@@ -1,3 +1,6 @@
+<?php
+  defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -83,17 +86,17 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				    	<li><a href="blog.html">BLOG</a></li>
 				    	<li  class="active"><a href="contact.html">CONTACT</a></li>
 				    	<div class="clear"></div>
-				    </ul>				    
+				    </ul>
 				 </div>
 			     <div class="clear"></div>
-		      </div>		   
+		      </div>
 		  </div>
   </div>
      <div class="main">
      	<div class="wrap">
 		<!---728x90--->
      	    <div class="content_top">
-     	    	<div class="contact">        	
+     	    	<div class="contact">
 	        		<div class="section group">
 				<div class="col_1_of_3 contact_1_of_3">
 					<div class="contact-form">
@@ -166,7 +169,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
         </ul>
         <div class="footer-pic"><img src="images/foot-icon.png" alt=""></div>
         </div>
-    	<div class="clear"></div>        
+    	<div class="clear"></div>
       </div>
     </div>
      <div class="copy">
@@ -176,4 +179,3 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 <!-- Mirrored from p.w3layouts.com/demos/events_club/web/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 01:28:55 GMT -->
 </html>
-
