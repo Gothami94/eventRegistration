@@ -22,6 +22,6 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->helper('html');
 		$this->load->helper('url');
-		$this->load->view('contact');
+		$this->load->view('admin/widgets');
 	}
 }

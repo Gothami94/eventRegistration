@@ -6,21 +6,21 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>admin/img/favicon.png">
 
-    <title>Widgets | Creative - Bootstrap 3 Responsive Admin Template</title>
+    <title>Charts | Creative - Bootstrap 3 Responsive Admin Template</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->    
+    <link href="<?php echo base_url(); ?>admin/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <!-- external css -->
+    <link href="<?php echo base_url(); ?>admin/css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
     <!-- font icon -->
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/font-awesome.min.css" rel="stylesheet" />    
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>admin/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -34,7 +34,8 @@
   <!-- container section start -->
   <section id="container" class="">
       <!--header start-->
-      <header class="header dark-bg">
+      
+      <<header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
@@ -157,7 +158,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin/img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -169,7 +170,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin/img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -193,7 +194,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin/img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -259,7 +260,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <img alt="" src="<?php echo base_url(); ?>admin/img/avatar1_small.jpg">
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -376,97 +377,125 @@
       </aside>
       <!--sidebar end-->
 
-      <!--main content start-->
+      <!--main content start-->      
       <section id="main-content">
-          <section class="wrapper">
-			<div class="row">
+        <section class="wrapper">
+		<div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="icon_genius"></i> Widgets</h3>
+					<h3 class="page-header"><i class="icon_piechart"></i> Chart</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-						<li><i class="icon_genius"></i>Widgets</li>
+						<li><i class="icon_piechart"></i>Chart</li>
 						
+					</ol>
 				</div>
 			</div>
-              <div class="row">
-                  <div class="col-lg-4">
-                      <section class="panel">
-                          <header class="panel-heading">
-                              Basic items
-                          </header>
-                          <ul class="list-group">
-                              <li class="list-group-item">Lorem ipsum dolor sit amet</li>
-                              <li class="list-group-item">Praesent tempus eleifend risus</li>
-                              <li class="list-group-item">Praesent tempus eleifend risus</li>
-                              <li class="list-group-item">Porta ac consectetur ac</li>
-                              <li class="list-group-item">Vestibulum at eros</li>
-                              <li class="list-group-item">Vestibulum at eros</li>
-                          </ul>
-                      </section>
-                  </div>
-                  <div class="col-lg-4">
-                      <section class="panel">
-                          <header class="panel-heading">
-                              Linked items
-                          </header>
-                          <div class="list-group">
-                              <a class="list-group-item " href="#">
-                                  Lorem ipsum dolor sit amet
-                              </a>
-                              <a class="list-group-item active" href="javascript:;">Praesent tempus eleifend risus</a>
-                              <a class="list-group-item" href="javascript:;">Praesent tempus eleifend risus</a>
-                              <a class="list-group-item" href="javascript:;">Porta ac consectetur ac</a>
-                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
-                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
+            <div class="row">
+              <!-- chart morris start -->
+              <div class="col-lg-12">
+                  <section class="panel">
+                      <header class="panel-heading">
+                          <h3>General Chart</Char>
+                      </header>
+                      <div class="panel-body">
+                        <div class="tab-pane" id="chartjs">
+                      <div class="row">
+                          <!-- Line -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Line
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="line" height="300" width="450"></canvas>
+                                  </div>
+                              </section>
+                          </div>                      
+                          <!-- Bar -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Bar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="bar" height="300" width="500"></canvas>
+                                  </div>
+                              </section>
                           </div>
-                      </section>
-                  </div>
-                  <div class="col-lg-4">
-                      <section class="panel">
-                          <header class="panel-heading">
-                              Custom content
-                          </header>
-                          <div class="list-group">
-                              <a class="list-group-item " href="javascript:;">
-                                  <h4 class="list-group-item-heading">List group item heading</h4>
-                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              </a>
-                              <a class="list-group-item active" href="javascript:;">
-                                  <h4 class="list-group-item-heading">List group item heading</h4>
-                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              </a>
-                              <a class="list-group-item" href="javascript:;">
-                                  <h4 class="list-group-item-heading">List group item heading</h4>
-                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              </a>
+                      </div>
+                      <div class="row">
+                          <!-- Radar -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Radar
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="radar" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
                           </div>
-                      </section>
+                          <!-- Polar Area -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Polar Area
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="polarArea" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+                      <div class="row">
+                          
+                          <!-- Pie -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Pie
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="pie" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                          <!-- Doughnut -->
+                          <div class="col-lg-6">
+                              <section class="panel">
+                                  <header class="panel-heading">
+                                      Doughnut
+                                  </header>
+                                  <div class="panel-body text-center">
+                                      <canvas id="doughnut" height="300" width="400"></canvas>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
                   </div>
+                      </div>
+                      </div>
+                    </section>
               </div>
-              <!-- page end-->
-          </section>
+              <!-- chart morris start -->
+            </div>
       </section>
       <!--main content end-->
-  </section>
-  <!-- container section end -->
-
+    </section>
+    <!-- container section end -->
     <!-- javascripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/jquery-1.8.3.min.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/bootstrap.min.js"></script>
     <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-    <!-- jquery knob -->
-    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/jquery.scrollTo.min.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- chartjs -->
+    <script src="<?php echo base_url(); ?>admin/assets/chart-master/Chart.js"></script>
+    <!-- custom chart script for this page only-->
+    <script src="<?php echo base_url(); ?>admin/js/chartjs-custom.js"></script>
     <!--custome script for all page-->
-    <script src="js/scripts.js"></script>
-
-  <script>
-
-      //knob
-      $(".knob").knob();
-
-  </script>
+    <script src="<?php echo base_url(); ?>admin/js/scripts.js"></script>
 
   </body>
 </html>

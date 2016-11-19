@@ -6,21 +6,21 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>admin/img/favicon.png">
 
-    <title>Blank | Creative - Bootstrap 3 Responsive Admin Template</title>
+    <title>Widgets | Creative - Bootstrap 3 Responsive Admin Template</title>
 
-    <!-- Bootstrap CSS -->    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="<?php echo base_url(); ?>admin//bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <!--external css-->
+    <link href="<?php echo base_url(); ?>admin/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- external css -->
     <!-- font icon -->
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>admin/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>admin/css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -34,7 +34,6 @@
   <!-- container section start -->
   <section id="container" class="">
       <!--header start-->
-      
       <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
@@ -158,7 +157,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin/img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -170,7 +169,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin/img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -182,7 +181,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin//img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -194,7 +193,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="<?php echo base_url(); ?>admin//img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -260,7 +259,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <img alt="" src="<?php echo base_url(); ?>admin/img/avatar1_small.jpg">
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -302,7 +301,7 @@
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
-                  <li class="">
+                  <li class="active">
                       <a class="" href="index.html">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
@@ -357,7 +356,7 @@
                       </ul>
                   </li>
                   
-                  <li class="sub-menu ">
+                  <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon_documents_alt"></i>
                           <span>Pages</span>
@@ -366,7 +365,7 @@
                       <ul class="sub">                          
                           <li><a class="" href="profile.html">Profile</a></li>
                           <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                          <li><a class="active" href="blank.html">Blank Page</a></li>
+                          <li><a class="" href="blank.html">Blank Page</a></li>
                           <li><a class="" href="404.html">404 Error</a></li>
                       </ul>
                   </li>
@@ -380,32 +379,94 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-		  <div class="row">
+			<div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa fa-bars"></i> Pages</h3>
+					<h3 class="page-header"><i class="icon_genius"></i> Widgets</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-						<li><i class="fa fa-bars"></i>Pages</li>
-						<li><i class="fa fa-square-o"></i>Pages</li>
-					</ol>
+						<li><i class="icon_genius"></i>Widgets</li>
+						
 				</div>
 			</div>
-              <!-- page start-->
-              Page content goes here
+              <div class="row">
+                  <div class="col-lg-4">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Basic items
+                          </header>
+                          <ul class="list-group">
+                              <li class="list-group-item">Lorem ipsum dolor sit amet</li>
+                              <li class="list-group-item">Praesent tempus eleifend risus</li>
+                              <li class="list-group-item">Praesent tempus eleifend risus</li>
+                              <li class="list-group-item">Porta ac consectetur ac</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                          </ul>
+                      </section>
+                  </div>
+                  <div class="col-lg-4">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Linked items
+                          </header>
+                          <div class="list-group">
+                              <a class="list-group-item " href="#">
+                                  Lorem ipsum dolor sit amet
+                              </a>
+                              <a class="list-group-item active" href="javascript:;">Praesent tempus eleifend risus</a>
+                              <a class="list-group-item" href="javascript:;">Praesent tempus eleifend risus</a>
+                              <a class="list-group-item" href="javascript:;">Porta ac consectetur ac</a>
+                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
+                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-4">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Custom content
+                          </header>
+                          <div class="list-group">
+                              <a class="list-group-item " href="javascript:;">
+                                  <h4 class="list-group-item-heading">List group item heading</h4>
+                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                              </a>
+                              <a class="list-group-item active" href="javascript:;">
+                                  <h4 class="list-group-item-heading">List group item heading</h4>
+                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                              </a>
+                              <a class="list-group-item" href="javascript:;">
+                                  <h4 class="list-group-item-heading">List group item heading</h4>
+                                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                              </a>
+                          </div>
+                      </section>
+                  </div>
+              </div>
               <!-- page end-->
           </section>
       </section>
       <!--main content end-->
   </section>
   <!-- container section end -->
-    <!-- javascripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script><!--custome script for all page-->
-    <script src="js/scripts.js"></script>
 
+    <!-- javascripts -->
+    <script src="<?php echo base_url(); ?>admin/js/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="<?php echo base_url(); ?>admin/js/jquery.scrollTo.min.js"></script>
+    <script src="<?php echo base_url(); ?>admin/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- jquery knob -->
+    <script src="<?php echo base_url(); ?>admin/assets/jquery-knob/js/jquery.knob.js"></script>
+    <!--custome script for all page-->
+    <script src="<?php echo base_url(); ?>admin/js/scripts.js"></script>
+
+  <script>
+
+      //knob
+      $(".knob").knob();
+
+  </script>
 
   </body>
 </html>
