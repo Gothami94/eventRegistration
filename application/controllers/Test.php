@@ -5,7 +5,7 @@ class Test extends CI_Controller {
 
 	public function view($page = 'Test')
 	{
-		// https://www.codeigniter.com/userguide3/helpers/html_helper.html 
+		// https://www.codeigniter.com/userguide3/helpers/html_helper.html
 		$this->load->helper('html');
 		// $this->load->helper('html'); not used
 		// http://www.formget.com/codeigniter-loading-css-and-javascript-file/
@@ -15,15 +15,15 @@ class Test extends CI_Controller {
 		// $this->load->helper(
 		//	array('helper1', 'helper2', 'helper3')
 		// );
-        if ( ! file_exists(APPPATH.'views/fft/'.$page.'.php'))
+        if ( ! file_exists(APPPATH.'views/'.$page.'.php'))
         {
                 // Whoops, we don't have a page for that!
                 show_404();
         }
 		$data['title'] = $page; // Capitalize the first letter
-        $this->load->view('fft/'.$page, $data);
-        
-	}	
+        $this->load->view($page, $data);
+
+	}
 		public function index()
 	{
 		$this->load->helper('html');

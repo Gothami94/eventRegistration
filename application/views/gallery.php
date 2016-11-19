@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="<?php echo base_url(); ?>public/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="<?php echo base_url(); ?>public/js/jquery-1.9.0.min.js"></script>
 <!-- Light Box ------>
-<link rel="stylesheet" href="<?php echo base_url(); ?>css/swipebox.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/swipebox.css">
 <script src="<?php echo base_url(); ?>public/js/jquery.swipebox.min.js"></script>
 <script type="text/javascript">
 		jQuery(function($) {
@@ -85,16 +85,16 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="index-2.html"><img src="public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>application/views/index-2.php"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>
-						<li><a href="<?php echo base_url(); ?>application/view/index-2.html">HOME</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/view/about.html">ABOUT</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/view/events.html">EVENTS</a></li>
-				    	<li class="active"><a href="<?php echo base_url(); ?>application/view/gallery.html">GALLERY</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/view/blog.html">BLOG</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/view/contact.html">CONTACT</a></li>
+						<li><a href="<?php echo base_url(); ?>application/views/index-2.php">HOME</a></li>
+				    	<li><a href="<?php echo base_url(); ?>application/views/about.php">ABOUT</a></li>
+				    	<li><a href="<?php echo base_url(); ?>application/views/events.php">EVENTS</a></li>
+				    	<li class="active"><a href="<?php echo base_url(); ?>application/views/gallery.php">GALLERY</a></li>
+				    	<li><a href="<?php echo base_url(); ?>application/views/blog.php">BLOG</a></li>
+				    	<li><a href="<?php echo base_url(); ?>application/views/contact.php">CONTACT</a></li>
 				    	<div class="clear"></div>
 				    </ul>
 				 </div>
