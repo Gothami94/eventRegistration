@@ -83,16 +83,16 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>application/views/index-2.php"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>
-						<li class="active"><a href="<?php echo base_url(); ?>application/views/index-2.php">HOME</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/about.php">ABOUT</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/events.php">EVENTS</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/gallery.php">GALLERY</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/blog.php">BLOG</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/contact.php">CONTACT</a></li>
+						<li class="active"><a href="<?php echo base_url(); ?>index.php/test/view/index-2">HOME</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/blog">BLOG</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/contact">CONTACT</a></li>
 				    	<div class="clear"></div>
 				    </ul>
 				 </div>
@@ -104,11 +104,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		  <div class="slider">
 	      	<div class="slider-wrapper theme-default">
 	            <div id="slider" class="nivoSlider">
-	                <img src="<?php echo base_url(); ?>images/1.jpg" data-thumb="images/1.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>images/2.jpg" data-thumb="images/2.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>images/3.jpg" data-thumb="images/3.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>images/4.jpg" data-thumb="images/4.jpg" alt="" />
-	                 <img src="<?php echo base_url(); ?>images/5.jpg" data-thumb="images/5.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/1.jpg" data-thumb="public/images/1.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/2.jpg" data-thumb="public/images/2.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/3.jpg" data-thumb="public/images/3.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/4.jpg" data-thumb="public/images/4.jpg" alt="" />
+	                 <img src="<?php echo base_url(); ?>public/images/5.jpg" data-thumb="public/images/5.jpg" alt="" />
 	            </div>
 	        </div>
    		</div>
@@ -122,7 +122,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>images/event_1.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?>public/images/event_1.jpg" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
@@ -133,7 +133,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>images/event_2.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?>public/images/event_2.jpg" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
@@ -145,7 +145,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="events.html">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>images/event_3.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?>public/images/event_3.jpg" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
@@ -160,7 +160,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			 <div class="section group">
 				<div class="col_1_of_3 span_1_of_3 today_show">
 					<h3>Today's Show</h3>
-					<img src="<?php echo base_url(); ?>images/today_show.jpg" alt="" />
+					<img src="<?php echo base_url(); ?>public/images/today_show.jpg" alt="" />
 					<h5><span>31 March</span></h5>
 					<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
 					<a href="#" class="button">View More</a>
@@ -183,7 +183,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Videos</h3>
-					  <a href="gallery.html"><img src="<?php echo base_url(); ?>images/videos.jpg" alt="" /></a>
+					  <a href="gallery.html"><img src="<?php echo base_url(); ?>public/images/videos.jpg" alt="" /></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 					<a href="gallery.html" class="button">See All</a>
 				</div>
@@ -197,25 +197,25 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     	<div class="half-footer" style="margin-left:0">
         <ul class="feeds">
         	<h3>Our Latest feeds</h3>
-            <li><a href="index-2.html">Lorem ipsum dolor consectetur adiping</a></li>
-            <li><a href="blog.html">Nunc sagittis mollis eros, at venenatis</a></li>
-            <li><a href="blog.html">Morbi nec dolor ipsum vel congugue</a></li>
-            <li><a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a></li>
-            <li><a href="contact.html">Nullam imperdiet vulputate congugue</a></li>
+          <li><a href="index-2.html">Maname Stage Drama</a></li>
+          <li><a href="blog.html">MIYASI GEE Musical Show</a></li>
+          <li><a href="blog.html">We are family Movie</a></li>
+          <li><a href="blog.html">NAAdanu Cultural Show</a></li>
+          <li><a href="contact.html">Ridee rayak</a></li>
         </ul>
-        <div class="footer-pic"><img src="<?php echo base_url(); ?>images/f-icon.png" alt=""></div>
+        <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/f-icon.png" alt=""></div>
         <div class="clear"></div>
         </div>
         <div class="half-footer" style="border:none">
         <ul class="adress">
         	<h3>Catch on</h3>
-            <li><a href="index-2.html">Events Club</a></li>
-            <li><a href="blog.html">West Coast, CA</a></li>
+          <li><a href="index-2.html">Namel Malani Theatre</a></li>
+          <li><a href="blog.html">Cotta Terrace, Colombo 00700</a></li>
             <li><a href="blog.html">Facebook - I Music</a></li>
             <li><a href="blog.html">Login</a></li>
             <li><a href="mailto:example@mail.com">yourname(at)companyname.com</a></li>
         </ul>
-        <div class="footer-pic"><img src="<?php echo base_url(); ?>images/foot-icon.png" alt=""></div>
+        <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/foot-icon.png" alt=""></div>
         </div>
     	<div class="clear"></div>
       </div>

@@ -75,16 +75,16 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>application/views/index-2.php"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>
-						<li><a href="<?php echo base_url(); ?>application/views/index-2.php">HOME</a></li>
-				    	<li class="active"><a href="<?php echo base_url(); ?>application/views/about.php">ABOUT</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/events.php">EVENTS</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/gallery.php">GALLERY</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/blog.php">BLOG</a></li>
-				    	<li><a href="<?php echo base_url(); ?>application/views/contact.php">CONTACT</a></li>
+						<li><a href="<?php echo base_url(); ?>index.php/test/view/index-2">HOME</a></li>
+				    	<li class="active"><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/blog">BLOG</a></li>
+				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/contact">CONTACT</a></li>
 				    	<div class="clear"></div>
 				    </ul>
 				 </div>
@@ -130,7 +130,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<h2><span>Latest Events</span></h2>
 					  <div class="event-grid">
 					  	<div class="event_img">
-						  <img src="<?php echo base_url(); ?>images/event1.jpg" title="post1" alt="">
+						  <img src="<?php echo base_url(); ?>public/images/event1.jpg" title="post1" alt="">
 					    </div>
 						<div class="event_desc">
 						 <h4><span>NEQUE LIGULA</span></h4>
@@ -141,7 +141,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					  </div>
 					  <div class="event-grid">
 					  	<div class="event_img">
-						  <img src="<?php echo base_url(); ?>images/event2.jpg" title="post1" alt="">
+						  <img src="<?php echo base_url(); ?>public/images/event2.jpg" title="post1" alt="">
 					    </div>
 						<div class="event_desc">
 						<h4><span>DOLORE IPSUM</span></h4>
@@ -152,7 +152,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					  </div>
 					  <div class="event-grid">
 					  	<div class="event_img">
-						  <img src="<?php echo base_url(); ?>images/event3.jpg" title="post1" alt="">
+						  <img src="<?php echo base_url(); ?>public/images/event3.jpg" title="post1" alt="">
 					    </div>
 						<div class="event_desc">
 							 <h4><span>NEQUE LIGULA</span></h4>
@@ -174,25 +174,25 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     	<div class="half-footer" style="margin-left:0">
         <ul class="feeds">
         	<h3>Our Latest feeds</h3>
-            <li><a href="index-2.html">Lorem ipsum dolor consectetur adiping</a></li>
-            <li><a href="blog.html">Nunc sagittis mollis eros, at venenatis</a></li>
-            <li><a href="blog.html">Morbi nec dolor ipsum vel congugue</a></li>
-            <li><a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a></li>
-            <li><a href="contact.html">Nullam imperdiet vulputate congugue</a></li>
+          <li><a href="index-2.html">Maname Stage Drama</a></li>
+          <li><a href="blog.html">MIYASI GEE Musical Show</a></li>
+          <li><a href="blog.html">We are family Movie</a></li>
+          <li><a href="blog.html">NAAdanu Cultural Show</a></li>
+          <li><a href="contact.html">Ridee rayak</a></li>
         </ul>
-        <div class="footer-pic"><img src="<?php echo base_url(); ?>images/f-icon.png" alt=""></div>
+        <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/f-icon.png" alt=""></div>
         <div class="clear"></div>
         </div>
         <div class="half-footer" style="border:none">
         <ul class="adress">
         	<h3>Catch on</h3>
-            <li><a href="index-2.html">Events Club</a></li>
-            <li><a href="blog.html">West Coast, CA</a></li>
+          <li><a href="index-2.html">Namel Malani Theatre</a></li>
+          <li><a href="blog.html">Cotta Terrace, Colombo 00700</a></li>
             <li><a href="blog.html">Facebook - I Music</a></li>
             <li><a href="blog.html">Login</a></li>
             <li><a href="mailto:example@mail.com">yourname(at)companyname.com</a></li>
         </ul>
-        <div class="footer-pic"><img src="images/foot-icon.png" alt=""></div>
+        <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/foot-icon.png" alt=""></div>
         </div>
     	<div class="clear"></div>
       </div>

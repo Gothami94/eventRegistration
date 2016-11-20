@@ -165,29 +165,15 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<h3>Today's Show</h3>
 					<img src="<?php echo base_url(); ?>public/images/today_show.jpg" alt="" />
 					<h5><span>31 March</span></h5>
-					<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
+					<h5>Have you ever listened to a favorite symphony or concerto and wondered what life experiences and inspiration shaped the composer’s ideas, how the orchestra players reacted upon first reading the new score or how the composer felt as musicians finally gave sonic life to notes on paper? </h5>
 					<a href="#" class="button">View More</a>
 				</div>
-					<div class="col_1_of_3 span_1_of_3">
-						<h3>New Tracks</h3>
-					            <div class="track_list">
-					  	              <ul>
-										<li><a href="#">consectetur adipisicing elit</a></li>
-										<li><a href="#">sed do eiusmod tempor incididunt</a></li>
-										<li><a href="#">labore et dolore magna aliqua.</a></li>
-										<li><a href="#">sed do eiusmod tempor</a></li>
-										<li><a href="#">abore et dolore magna</a></li>
-										<li><a href="#">incididunt ut labore et dolore</a></li>
-										<li><a href="#">dolore magna aliqua</a></li>
-										<li><a href="#">adipisicing elit, sed do eiusmod</a></li>
-										<li><a href="#">incididunt ut labore et dolore</a></li>
-									</ul>
-					            </div>
-							</div>
+        <div class="col_1_of_3 span_1_of_3 today_show">
+        </div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Videos</h3>
 					  <a href="gallery.html"><img src="<?php echo base_url(); ?>public/images/videos.jpg" alt="" /></a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p>When you commission a new work of music through LACO’s Sound Investment program, you can get your own answers, straight from the artist’s mouth.. </p>
 					<a href="gallery.html" class="button">See All</a>
 				</div>
 			</div>
@@ -200,11 +186,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     	<div class="half-footer" style="margin-left:0">
         <ul class="feeds">
         	<h3>Our Latest feeds</h3>
-            <li><a href="index-2.html">Lorem ipsum dolor consectetur adiping</a></li>
-            <li><a href="blog.html">Nunc sagittis mollis eros, at venenatis</a></li>
-            <li><a href="blog.html">Morbi nec dolor ipsum vel congugue</a></li>
-            <li><a href="blog.html">Nullam a odio ipsum, at sodales lorem.</a></li>
-            <li><a href="contact.html">Nullam imperdiet vulputate congugue</a></li>
+          <li><a href="index-2.html">Maname Stage Drama</a></li>
+          <li><a href="blog.html">MIYASI GEE Musical Show</a></li>
+          <li><a href="blog.html">We are family Movie</a></li>
+          <li><a href="blog.html">NAAdanu Cultural Show</a></li>
+          <li><a href="contact.html">Ridee rayak</a></li>
         </ul>
         <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/f-icon.png" alt=""></div>
         <div class="clear"></div>
@@ -212,13 +198,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
         <div class="half-footer" style="border:none">
         <ul class="adress">
         	<h3>Catch on</h3>
-            <li><a href="index-2.html">Events Club</a></li>
-            <li><a href="blog.html">West Coast, CA</a></li>
+          <li><a href="index-2.html">Namel Malani Theatre</a></li>
+          <li><a href="blog.html">Cotta Terrace, Colombo 00700</a></li>
             <li><a href="blog.html">Facebook - I Music</a></li>
             <li><a href="blog.html">Login</a></li>
             <li><a href="mailto:example@mail.com">yourname(at)companyname.com</a></li>
         </ul>
-        <div class="footer-pic"><img src="public/images/foot-icon.png" alt=""></div>
+        <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/foot-icon.png" alt=""></div>
         </div>
     	<div class="clear"></div>
       </div>
