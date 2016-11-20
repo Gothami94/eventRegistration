@@ -122,7 +122,7 @@ body{
 	padding:1.5%;
 }
 .event_grid{
-	 background:rgba(0, 0, 0, 0.42); 
+	 background:rgba(0, 0, 0, 0.42);
 	 -webkit-transition: all .9s;
 	-moz-transition: all .9s;
 	-o-transition: all .9s;
@@ -161,7 +161,7 @@ body{
 	 letter-spacing:-1px;
  }
 .content_bottom{
-   padding:50px 0;	
+   padding:50px 0;
 }
 /*  GRID OF THREE   ============================================================================= */
 .section {
@@ -189,7 +189,7 @@ body{
 
 .span_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_3  h3{
 	font-size:2em;
@@ -232,7 +232,7 @@ body{
 /*** Buttons ****/
 .button {
 	float:right;
-	font-size:0.85em;	
+	font-size:0.85em;
 	display: inline-block;
 	background:#CA009C;
 	color: #FFF;
@@ -242,9 +242,28 @@ body{
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;   
+	transition: all 0.5s ease-in-out;
 }
 .button:hover {
+       text-shadow: 0px 0px 1px #000;
+	  background:#000;
+}
+
+.btn1 {
+	float:right;
+	font-size:0.85em;
+	display: inline-block;
+	background:#ffcc00;
+	color: #FFF;
+	text-decoration: none;
+	padding:8px 15px;
+	outline: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.btn1:hover {
        text-shadow: 0px 0px 1px #000;
 	  background:#000;
 }
@@ -274,7 +293,7 @@ body{
 	width:46%;
 	padding:1.5%;
 	margin-left:1.6%;
-	border-right:2px ridge rgba(129, 6, 153, 0.41); 
+	border-right:2px ridge rgba(129, 6, 153, 0.41);
 }
 .footer li a{
 	color:#F39EFF;
@@ -308,7 +327,7 @@ body{
 .copy a:hover{
 	color: #fff;
 	border-bottom:1px solid #FFF;
-} 
+}
 /************ About ************/
 .content_top{
 	padding:50px 0;
@@ -337,7 +356,7 @@ body{
 .col_1_of_3:first-child { margin-left: 0; }
 .span_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_3  h2{
 	font-size:3em;
@@ -459,14 +478,14 @@ body{
 	float:left;
 	margin: 1% 0 0% 1.6%;
 }
-.grid_1_of_3:first-child { 
-	margin-left: 0; 
-} 
+.grid_1_of_3:first-child {
+	margin-left: 0;
+}
 .events_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
-.events_1_of_3 img{ 
+.events_1_of_3 img{
 	border:5px solid #FFF;
 	border: 5px solid #FFF;
 	max-width: 100%;
@@ -546,9 +565,9 @@ body{
 	float:left;
 	margin:2% 0 2% 1.6%;
 }
-.grid_1_of_4:first-child { 
-	margin-left: 0; 
-} 
+.grid_1_of_4:first-child {
+	margin-left: 0;
+}
 .images_1_of_4 {
 	width:23%;
 	position:relative;
@@ -578,7 +597,7 @@ body{
 .images_1_of_4 .zoom-icon {
 	top: -50px;
 	width:100%;
-	height: 182px;	
+	height: 182px;
 }
 .images_1_of_4 a:hover .zoom-icon {
 	top: 0;
@@ -668,7 +687,7 @@ body{
 .blog-desc h4 a.post{
    font-size:1em;
    text-decoration:underline;
-   color:#c0c0c0;  	
+   color:#c0c0c0;
 }
 .blog-desc h4 a.post:hover{
    	color:#FF54C8;
@@ -708,7 +727,7 @@ body{
 /***** Contact ****/
 .contact_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .contact_1_of_3 h3{
 	color:#FFF;
@@ -741,7 +760,7 @@ body{
 }
 .contact-form textarea{
 		resize:none;
-		height:120px;		
+		height:120px;
 }
 .mybutton{
 	padding: 8px 15px;
@@ -866,12 +885,12 @@ body{
 	.date figure {
 		font-size: 0.7em;
 	}
-	.col_1_of_3{ 
+	.col_1_of_3{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:94%;
-		padding:3%;  
+		padding:3%;
 	}
 	.content_bottom,.content_top{
 		padding:20px 0;
@@ -885,7 +904,7 @@ body{
 	}
 	.contact_1_of_3{
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
 }
 @media all and (max-width:480px) {
@@ -897,7 +916,7 @@ body{
 	}
 	.images_1_of_3{
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
 	.listview_1_of_3{
 		margin:5px 0;
