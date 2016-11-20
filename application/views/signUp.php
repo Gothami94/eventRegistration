@@ -1,3 +1,6 @@
+<?php
+  defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Take Your Leave | Online</title>
-        <link rel="stylesheet" href="public/css/bootstrap.min.css">
-        <link rel="stylesheet" href="public/css/font-awesome.min.css">
-        <link rel="stylesheet" href="public/css/login-file.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/login-file.css">
     </head>
 
     <body>
@@ -22,13 +25,13 @@
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:-60px;">
                             <center>
-                                <img src="public/images/new-logo.png" style="height:50px; width:50px;" class="img-responsive" />
+                                <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
                             </center>
 
                             <h1>Namel Malani Punchi Theatre | Online Event Club</h1>
                             <div class="description">
                             	<p>
-                                    Register on Event Club and enjoy your self
+                                    Register on 'Punchi Theatre' and enjoy your self
                             	</p>
                             </div>
                         </div>
@@ -51,10 +54,10 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="module/login.php" method="post" class="login-form">
+			                    <form role="form" action="login.php" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">User name</label>
-			                        	<input type="text" name="companyID" placeholder="Username" class="form-username form-control" id="form-username" required>
+			                        	<input type="text" name="user_name" placeholder="User name" class="form-username form-control" id="form-username" required>
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>

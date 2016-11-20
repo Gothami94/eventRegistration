@@ -166,21 +166,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<a href="#" class="button">View More</a>
 				</div>
 					<div class="col_1_of_3 span_1_of_3">
-						<h3>New Tracks</h3>
-					            <div class="track_list">
-					  	              <ul>
-										<li><a href="#">consectetur adipisicing elit</a></li>
-										<li><a href="#">sed do eiusmod tempor incididunt</a></li>
-										<li><a href="#">labore et dolore magna aliqua.</a></li>
-										<li><a href="#">sed do eiusmod tempor</a></li>
-										<li><a href="#">abore et dolore magna</a></li>
-										<li><a href="#">incididunt ut labore et dolore</a></li>
-										<li><a href="#">dolore magna aliqua</a></li>
-										<li><a href="#">adipisicing elit, sed do eiusmod</a></li>
-										<li><a href="#">incididunt ut labore et dolore</a></li>
-									</ul>
-					            </div>
-							</div>
+						<a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="button">Buy Tickets >></a><br>
+            <a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="button">Register Your Event >></a><br>
+            <a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="button">As a Supplier >></a><br>
+					</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Videos</h3>
 					  <a href="gallery.html"><img src="<?php echo base_url(); ?>public/images/videos.jpg" alt="" /></a>
@@ -213,15 +202,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
           <li><a href="blog.html">Cotta Terrace, Colombo 00700</a></li>
             <li><a href="blog.html">Facebook - I Music</a></li>
             <li><a href="blog.html">Login</a></li>
-            <li><a href="mailto:example@mail.com">yourname(at)companyname.com</a></li>
+            <li><a href="www.ragahala.lk">ragahala.lk</a></li>
         </ul>
         <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/foot-icon.png" alt=""></div>
         </div>
     	<div class="clear"></div>
       </div>
-    </div>
-    <div class="copy">
-    	<p>© 2013 Events Club.All Rights Reserved | Design by <a href="http://w3layouts.com/">W3Layouts</a></p>
     </div>
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"26612e640c","applicationID":"3365418","transactionName":"NVVXMUVWVkMHBRUPXgwfYBdeGFxVCwkSSVgMVFAdGUdQQA==","queueTime":0,"applicationTime":1,"atts":"GRJURw1MRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 

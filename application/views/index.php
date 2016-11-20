@@ -168,8 +168,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<h5>Have you ever listened to a favorite symphony or concerto and wondered what life experiences and inspiration shaped the composer’s ideas, how the orchestra players reacted upon first reading the new score or how the composer felt as musicians finally gave sonic life to notes on paper? </h5>
 					<a href="#" class="button">View More</a>
 				</div>
-        <div class="col_1_of_3 span_1_of_3 today_show">
-        </div>
+        <center><div class="col_1_of_3 span_1_of_3 today_show">
+          <center><a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="btn1"><h4>Buy Tickets >></h4></a></center><br><br><br><br>
+          <center><a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="btn1"><h4>Register Your Event >></h4></a></center><br><br><br><br>
+          <center><a href="<?php echo base_url(); ?>index.php/test/view/signUp" class="btn1"><h4>As a Supplier >></h4></a></center><br>
+        </div></center>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Videos</h3>
 					  <a href="gallery.html"><img src="<?php echo base_url(); ?>public/images/videos.jpg" alt="" /></a>
@@ -202,16 +205,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
           <li><a href="blog.html">Cotta Terrace, Colombo 00700</a></li>
             <li><a href="blog.html">Facebook - I Music</a></li>
             <li><a href="blog.html">Login</a></li>
-            <li><a href="mailto:example@mail.com">yourname(at)companyname.com</a></li>
+            <li><a href="www.ragahala.lk">ragahala.lk</a></li>
         </ul>
         <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/foot-icon.png" alt=""></div>
         </div>
     	<div class="clear"></div>
       </div>
     </div>
-    <div class="copy">
-    	<p>© 2013 Events Club.All Rights Reserved | Design by <a href="http://w3layouts.com/">W3Layouts</a></p>
-    </div>
+
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"26612e640c","applicationID":"3365418","transactionName":"NVVXMUVWVkMHBRUPXgwfYBdeGFxVCwkSSVgMVFAdGUdQQA==","queueTime":0,"applicationTime":1,"atts":"GRJURw1MRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 
 <!-- Mirrored from p.w3layouts.com/demos/events_club/web/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 01:27:34 GMT -->
