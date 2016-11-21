@@ -31,28 +31,29 @@
                             <h1>Namel Malani Punchi Theatre | Online Event Club</h1>
                             <div class="description">
                             	<p>
-                                    Sign Up here
+                                    Register on 'Punchi Theatre' and enjoy your self
                             	</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row" >
-                        <div class="col-sm-6 col-sm-offset-3 form-box" >
+                    <div class="row" style=" border-style: solid #fff !important;">
+                        <div class="col-sm-6 col-sm-offset-3 form-box" style=" border-style: solid #fff !important;">
 
                             <div class="alert alert-danger alert-dismissible" role="alert" <?php if(!isset($_GET['login'])){ echo "style='display:none;'";}?> >
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong> Invalid login, please try again
                             </div>
 
-                        	<div class="form-top">
+                        	<div class="form-top" >
                         		<div class="form-top-left" >
-                        			<h3>Sign Up!</h3>
+                        			<h3>Login to our site</h3>
+                            		<p>Enter your User-name and password to log on:</p>
                         		</div>
-                        		<div class="form-top-right">
+                        		<div class="form-top-right" >
                         			<i class="fa fa-lock"></i>
                         		</div>
                             </div>
-                            <div class="form-bottom">
+                            <div class="form-bottom" >
 			                    <form role="form" action="login.php" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">User name</label>
@@ -62,8 +63,8 @@
 			                        	<label class="sr-only" for="form-password">Password</label>
 			                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password" required>
 			                        </div>
-                                    <a href="<?php echo base_url(); ?>index.php/test/view/forget_password.php"><h5 class="form-top1">Forget your password?</h5></a>
-                                    <a href="<?php echo base_url(); ?>index.php/test/view/signUp.php"><h5 class="form-top1">Create account</h5></a>
+                                    <a href="<?php echo base_url(); ?>index.php/test/view/forget_password"><h5 class="form-top1">Forget your password?</h5></a>
+                                    <a href="<?php echo base_url(); ?>index.php/test/view/signUp"><h5 class="form-top1">Create account</h5></a>
 			                        <button type="submit" class="btn">Sign in!</button>
 			                    </form>
 		                    </div>
