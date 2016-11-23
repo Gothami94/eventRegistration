@@ -26,7 +26,7 @@
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:-60px;">
                             <center>
-                                <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
+                                <img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
                             </center>
 
                             <h1>Namel Malani Punchi Theatre | Online </h1>
@@ -39,23 +39,18 @@
                     </div>
                     <div class="row" style=" border-style: solid #fff !important;">
                         <div class="col-sm-6 col-sm-offset-3 form-box" style=" border-style: solid #fff !important;">
-
-                            <div class="alert alert-danger alert-dismissible" role="alert" <?php if(!isset($_GET['login'])){ echo "style='display:none;'";}?> >
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong> Invalid login, please try again
-                            </div>
+                          <?php
+                            if ($data) { ?> <CENTER><h3 style="color:green;">You are login successfully!</h3></CENTER><br><?php }?>
 
                         	<div class="form-top" >
                         		<div class="form-top-left" >
                         		  <h3>Login to our site</h3>
                             	<p>Enter your User-name and password to log on:</p>
-                        		</div>
-                        		<div class="form-top-right" >
+                        		</div>  
 
-                        		</div>
                             </div>
                             <div class="form-bottom" >
-			                    <form role="form" action="login.php" method="post" class="login-form">
+			                    <form action="<?php echo base_url(); ?>index.php/Login/login_query" method="post" name="login">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">User name</label>
 			                        	<input type="text" name="user_name" placeholder="User name" class="form-username form-control" id="form-username" required>

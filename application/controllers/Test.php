@@ -21,7 +21,7 @@ class Test extends CI_Controller {
                 show_404();
         }
 		$data['title'] = $page; // Capitalize the first letter
-        $this->load->view($page, $data);
+    $this->load->view($page, $data);
 
 	}
 		public function index()

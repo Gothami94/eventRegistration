@@ -75,7 +75,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>

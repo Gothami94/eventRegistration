@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:-60px;">
                             <center>
-                                <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
+                                <img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
                             </center>
                             <h1>Namel Malani Punchi Theatre | Online</h1>
                             <div class="description">
@@ -53,12 +53,13 @@
                     </div>
                     <div class="row" >
                         <div class="col-sm-6 col-sm-offset-3 form-box">
-                          <?php if (isset($message)) { ?>
+                        <?php if (isset($message)) { ?>
                           <CENTER><h3 style="color:green;">Your accout created successfully!</h3></CENTER><br>
-                          <?php } ?>
+                        <?php } ?>
+
 
                           <div class="form-bottom" >
-                            <form method="post" action="<?php echo base_url(); ?>application/models/signUp.php" name="signUp">
+                            <form method="post" action="<?php echo base_url(); ?>index.php/SignUp/sign" name="signUp">
                                 <div class="form-group">
                                     <div class="col-sm-4" style="font-size:15px;"><label> Name</label><span class="error">*</span></div>
                                     <div class="col-sm-8"><input type="text" class="form-control" id="name" name="cus_name" placeholder="Name" required></div><br>

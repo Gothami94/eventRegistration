@@ -27,6 +27,7 @@ a{text-decoration:none;}
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
+.img1{max-width:200px;max-height:100px;}
 /*end reset*/
 @font-face {
       font-family: 'caviar_dreamsregular';

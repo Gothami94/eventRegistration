@@ -69,11 +69,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>
-						<li><a href="<?php echo base_url(); ?>index.php/test/view/index-2">HOME</a></li>
+						<li><a href="<?php echo base_url(); ?>index.php/test/view/index">HOME</a></li>
 				    	<li class="active"><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
@@ -93,28 +93,27 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
      	    	<div class="section group">
 				<div class="col_1_of_3 span_1_of_3">
 					<h2><span>welcome</span></h2>
-					 <h4>Lorem ipsum dolor sit amet</h4>
-					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					 <h4>Welcome to 'Punchi Theatre!'</h4>
+					 <p>We provides Sri Lankans a one stop shop for all different event requirements such as advertising, buying / selling tickets, promotions, information on event support service providers etc.</p>
+				     <p>The idea of Punchi Theatre is to promote and develop theatre in Sri Lanka.</p>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
 					 <div class="menu_timmings">
 					 	 <ul>
 					 	 	<li>
-								<div class="txt1">Main Menu</div>
-								<div class="txt2 color1">12am - 12pm</div>
+								<div class="txt1">Morning Sessions</div>
+								<div class="txt2 color1">8am - 12pm</div>
 							 </li>
 							 <li>
-								<div class="txt1">Beer Festival</div>
-								<div class="txt2 color2">9am - 8pm</div>
+								<div class="txt1">Evening Sessionsl</div>
+								<div class="txt2 color2">3pm - 6pm</div>
 							 </li>
 							 <li>
-								<div class="txt1">Live Music</div>
+								<div class="txt1">Night Sessions</div>
 								<div class="txt2 color3">7pm - 12pm</div>
 							 </li>
 							 <li>
-								<div class="txt1">Disco Dance</div>
+								<div class="txt1">Disco Party</div>
 								<div class="txt2 color4">8pm - 2am</div>
 							 </li>
 					 	 </ul>

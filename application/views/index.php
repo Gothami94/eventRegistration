@@ -80,7 +80,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					</div>
 				  <div class="menu">
 					<ul>
@@ -195,11 +195,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     	<div class="half-footer" style="margin-left:0">
         <ul class="feeds">
         	<h3>Our Latest feeds</h3>
-          <!-- <?php
-            foreach ($returndata->result() as $r) {
-              echo "<li>".print_r ($r->event_name)."</li>";
+          <?php
+            $i=count($returnData)-1;
+            for ($x = 0; $x <= $i; $x++)  {; ?>
+              <li class="feeds" style="color:#ffffff ! important;"><i class="fa fa-angle-double-right"></i><a href="<?php echo base_url(); ?>index.php/test/view/events"><?php print_r ($returnData[$x]->event_name);?> <?php echo "</a></li><br>";
+              //$i+=1;
             }
-          ?> -->
+          ?>
 
         </ul>
         <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/f-icon.png" alt=""></div>

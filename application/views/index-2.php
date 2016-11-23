@@ -76,7 +76,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
-					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img  class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
 					<ul>
@@ -97,11 +97,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		  <div class="slider">
 	      	<div class="slider-wrapper theme-default">
 	            <div id="slider" class="nivoSlider">
-	                <img src="<?php echo base_url(); ?>public/images/1.jpg" data-thumb="public/images/1.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>public/images/2.jpg" data-thumb="public/images/2.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>public/images/3.jpg" data-thumb="public/images/3.jpg" alt="" />
-	                <img src="<?php echo base_url(); ?>public/images/4.jpg" data-thumb="public/images/4.jpg" alt="" />
-	                 <img src="<?php echo base_url(); ?>public/images/5.jpg" data-thumb="public/images/5.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/1.jpg" data-thumb="<?php echo base_url(); ?>public/images/1.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/2.jpg" data-thumb="<?php echo base_url(); ?>public/images/2.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/3.jpg" data-thumb="<?php echo base_url(); ?>public/images/3.jpg" alt="" />
+	                <img src="<?php echo base_url(); ?>public/images/4.jpg" data-thumb="<?php echo base_url(); ?>public/images/4.jpg" alt="" />
+	                 <img src="<?php echo base_url(); ?>public/images/5.jpg" data-thumb="<?php echo base_url(); ?>public/images/5.jpg" alt="" />
 	            </div>
 	        </div>
    		</div>
@@ -111,65 +111,65 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
      <div class="main">
      	<div class="wrap">
 		<!---728x90--->
-     	   <div class="section group">
-				<div class="listview_1_of_3 images_1_of_3 event_grid">
-					<a href="events.html">
-					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[1]->image);?>" alt="" />
-					</div>
-					<div class="text list_1_of_2">
-						<div class="date">
-              <figure><span style="font-size:2em !important;">
-                <?php print_r ($returnData[1]->event_name);?><br>
-                <?php print_r ($returnData[1]->e_date);?>
-              </span></figure>
-						</div>
-					</div></a>
-				</div>
-				<div class="listview_1_of_3 images_1_of_3 event_grid">
-					<a href="events.html">
-					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[2]->image);?>" alt="" />
-					</div>
-					<div class="text list_1_of_2">
-						<div class="date">
-              <figure><span style="font-size:2em !important;">
-                <?php print_r ($returnData[2]->event_name);?><br>
-                <?php print_r ($returnData[2]->e_date);?>
-              </span></figure>
-						</div>
-				     </div>
-				     </a>
-				</div>
-				<div class="listview_1_of_3 images_1_of_3 event_grid">
-					<a href="events.html">
-					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[3]->image);?>" alt="" />
-					</div>
-					<div class="text list_1_of_2">
-						<div class="date">
-              <figure><span style="font-size:2em !important;">
-                <?php print_r ($returnData[3]->event_name);?><br>
-                <?php print_r ($returnData[3]->e_date);?>
-              </span></figure>
-						</div>
-				    </div>
-				    </a>
-				</div>
+     	  <div class="section group">
+          <div class="listview_1_of_3 images_1_of_3 event_grid">
+  					<a href="<?php echo base_url(); ?>application/views/events.php">
+  					<div class="listimg listimg_1_of_2">
+  						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[1]->image);?>" alt="" />
+  					</div>
+  					<div class="text list_1_of_2">
+  						<div class="date">
+                <figure><span style="font-size:2em !important;">
+                  <?php print_r ($returnData[1]->event_name);?><br>
+                  <?php print_r ($returnData[1]->e_date);?>
+                </span></figure>
+  						</div>
+  					</div></a>
+  				</div>
+          <div class="listview_1_of_3 images_1_of_3 event_grid">
+  					<a href="<?php echo base_url(); ?>application/views/events.php">
+  					<div class="listimg listimg_1_of_2">
+  						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[2]->image);?>" alt="" />
+  					</div>
+  					<div class="text list_1_of_2">
+  						<div class="date">
+                <figure><span style="font-size:2em !important;">
+                  <?php print_r ($returnData[2]->event_name);?><br>
+                  <?php print_r ($returnData[2]->e_date);?>
+                </span></figure>
+  						</div>
+  				     </div>
+  				     </a>
+  				</div>
+          <div class="listview_1_of_3 images_1_of_3 event_grid">
+  					<a href="<?php echo base_url(); ?>application/views/events.php">
+  					<div class="listimg listimg_1_of_2">
+  						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[3]->image);?>" alt="" />
+  					</div>
+  					<div class="text list_1_of_2">
+  						<div class="date">
+  							<figure><span style="font-size:2em !important;">
+                  <?php print_r ($returnData[3]->event_name);?><br>
+                  <?php print_r ($returnData[3]->e_date);?>
+                </span></figure>
+  						</div>
+  				    </div>
+  				    </a>
+  				</div>
 			</div>
 			<!---728x90--->
 			 <div class="content_bottom">
 			 <div class="section group">
-				<div class="col_1_of_3 span_1_of_3 today_show">
-					<h3>Today's Show</h3>
-					<img src="<?php echo base_url(); ?><?php print_r ($returnData[0]->image);?>" alt="" />
-					<h5><span>
-            <?php print_r ($returnData[0]->event_name);?><br>
-          <?php print_r ($returnData[0]->e_date);?>
-        </span></h5>
-					<h5><?php print_r ($returnData[0]->description);?></h5>
-					<a href="#" class="button">View More</a>
-				</div>
+         <div class="col_1_of_3 span_1_of_3 today_show">
+ 					<h3>Today's Show</h3>
+ 					<img src="<?php echo base_url(); ?><?php print_r ($returnData[0]->image);?>" alt="" />
+ 					<h5><span>
+             <?php print_r ($returnData[0]->event_name);?><br>
+             <?php print_r ($returnData[0]->e_date);?>
+           </span></h5>
+ 					<h5><?php print_r ($returnData[0]->description);?></h5>
+ 					<a href="#" class="button">View More</a>
+ 				</div>
 					<div class="col_1_of_3 span_1_of_3">
 						<a href="<?php echo base_url(); ?>index.php/test/view/login" class="button">Buy Tickets >></a><br>
             <a href="<?php echo base_url(); ?>index.php/test/view/login" class="button">Register Your Event >></a><br>
