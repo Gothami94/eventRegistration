@@ -22,11 +22,22 @@ class signUp extends CI_Controller {
 	{
 		$this->load->helper('html');
 		$this->load->helper('url');
-
 		$this->load->model('signUp');
-		$result=$this->signUp->sign();
 
-		$this->load->view('signUp');
+		$data = array(
+			'cus_name' => $this->input->post('cus_name'),
+			'user_name' => $this->input->post('user_name'),
+			'password' => $this->input->post('password'),
+			'contact' => $this->input->post('contact_nmbr'),
+			'email' => $this->input->post('email'),
+			'provider' => $this->input->post('provider')
+			);
+			//Transfering data to Model
+		$this->signUp->sign($data);
+		$data['message'] = 'Customer added Successfully!';
+		//Loading View
+		$this->load->view('signUp', $data);
+		
 
 	}
 }

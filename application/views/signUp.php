@@ -53,10 +53,9 @@
                     </div>
                     <div class="row" >
                         <div class="col-sm-6 col-sm-offset-3 form-box">
-                            <div class="alert alert-danger alert-dismissible" role="alert" <?php if(!isset($_GET['login'])){ echo "style='display:none;'";}?> >
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong> Invalid login, please try again
-                            </div>
+                          <?php if (isset($message)) { ?>
+                          <CENTER><h3 style="color:green;">Your accout created successfully!</h3></CENTER><br>
+                          <?php } ?>
 
                           <div class="form-bottom" >
                             <form method="post" action="<?php echo base_url(); ?>application/models/signUp.php" name="signUp">
