@@ -143,15 +143,15 @@ img { max-width: 100%; }
     .form-top-right { font-size: 42px; line-height: 90px; }
 
 }
-
+/*
 input[type="text"],input[type="email"],
 input[type="password"] {
-    height: 30px;
+    height: 50px;
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
     background: none;
-    border: 3px solid #ffffff;
+    border: 3px solid #191970;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -187,7 +187,7 @@ input[type="password"]::-moz-placeholder, input[type="password"]::-moz-placehold
 
 input[type="password"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { color: #808080; }
 
-input[type="password"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { color: #808080; }
+input[type="password"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { color: #808080; }*/
 
 
 button.btn {

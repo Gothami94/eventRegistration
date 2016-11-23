@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class signUp extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,18 +23,10 @@ class Welcome extends CI_Controller {
 		$this->load->helper('html');
 		$this->load->helper('url');
 
-		$this->load->model('Home');
-		$result=$this->Home->upcoming_events();
+		$this->load->model('signUp');
+		$result=$this->signUp->sign();
 
-		$data = array();
-		$i = 0;
-		foreach ($result->result() as $object) {
-			$data[$i] = $object;
-			$i +=1;
-		}
-		//print_r ($data[0]->e_date);
-		$data_array['returnData']= $data;
-		$this->load->view('index',$data_array);
+		$this->load->view('signUp');
 
 	}
 }

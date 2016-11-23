@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/login-file.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -28,7 +29,7 @@
                                 <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
                             </center>
 
-                            <h1>Namel Malani Punchi Theatre | Online Event Club</h1>
+                            <h1>Namel Malani Punchi Theatre | Online </h1>
                             <div class="description">
                             	<p>
                                     Register on 'Punchi Theatre' and enjoy your self
@@ -46,11 +47,11 @@
 
                         	<div class="form-top" >
                         		<div class="form-top-left" >
-                        			<h3>Login to our site</h3>
-                            		<p>Enter your User-name and password to log on:</p>
+                        		  <h3>Login to our site</h3>
+                            	<p>Enter your User-name and password to log on:</p>
                         		</div>
                         		<div class="form-top-right" >
-                        			<i class="fa fa-lock"></i>
+
                         		</div>
                             </div>
                             <div class="form-bottom" >

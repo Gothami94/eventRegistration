@@ -1,16 +1,10 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 
-<!-- Mirrored from p.w3layouts.com/demos/events_club/web/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 01:26:51 GMT -->
 <head>
 <title>Namel Malani Punchi Theatre | Home </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -61,7 +55,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 
 <script async src='../../../../pagead2.googlesyndication.com/pagead/js/f.txt'></script>
-<!-- ResponsiveW3layouts -->
+<!-- Responsive-->
 <ins class='adsbygoogle'
      style='display:block'
      data-ad-client='ca-pub-9153409599391170'
@@ -121,26 +115,32 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
      <div class="main">
      	<div class="wrap">
 		<!---728x90--->
-     	   <div class="section group">
+     	  <div class="section group">
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="<?php echo base_url(); ?>application/views/events.php">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>public/images/event_1.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[1]->image);?>" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
-							<figure><span>02</span>January</figure>
+              <figure><span style="font-size:2em !important;">
+                <?php print_r ($returnData[1]->event_name);?><br>
+                <?php print_r ($returnData[1]->e_date);?>
+              </span></figure>
 						</div>
 					</div></a>
 				</div>
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="<?php echo base_url(); ?>application/views/events.php">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>public/images/event_2.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[2]->image);?>" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
-							<figure><span>14</span>March</figure>
+              <figure><span style="font-size:2em !important;">
+                <?php print_r ($returnData[2]->event_name);?><br>
+                <?php print_r ($returnData[2]->e_date);?>
+              </span></figure>
 						</div>
 				     </div>
 				     </a>
@@ -148,11 +148,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="listview_1_of_3 images_1_of_3 event_grid">
 					<a href="<?php echo base_url(); ?>application/views/events.php">
 					<div class="listimg listimg_1_of_2">
-						  <img src="<?php echo base_url(); ?>public/images/event_3.jpg" alt="" />
+						  <img src="<?php echo base_url(); ?><?php print_r ($returnData[3]->image);?>" alt="" />
 					</div>
 					<div class="text list_1_of_2">
 						<div class="date">
-							<figure><span>18</span>March</figure>
+							<figure><span style="font-size:2em !important;">
+                <?php print_r ($returnData[3]->event_name);?><br>
+                <?php print_r ($returnData[3]->e_date);?>
+              </span></figure>
 						</div>
 				    </div>
 				    </a>
@@ -163,9 +166,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			 <div class="section group">
 				<div class="col_1_of_3 span_1_of_3 today_show">
 					<h3>Today's Show</h3>
-					<img src="<?php echo base_url(); ?>public/images/today_show.jpg" alt="" />
-					<h5><span>31 March</span></h5>
-					<h5>Have you ever listened to a favorite symphony or concerto and wondered what life experiences and inspiration shaped the composer’s ideas, how the orchestra players reacted upon first reading the new score or how the composer felt as musicians finally gave sonic life to notes on paper? </h5>
+					<img src="<?php echo base_url(); ?><?php print_r ($returnData[0]->image);?>" alt="" />
+					<h5><span>
+            <?php print_r ($returnData[0]->event_name);?><br>
+            <?php print_r ($returnData[0]->e_date);?>
+          </span></h5>
+					<h5><?php print_r ($returnData[0]->description);?></h5>
 					<a href="#" class="button">View More</a>
 				</div>
         <center><div class="col_1_of_3 span_1_of_3 today_show">
@@ -189,11 +195,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     	<div class="half-footer" style="margin-left:0">
         <ul class="feeds">
         	<h3>Our Latest feeds</h3>
-          <li><a href="index-2.html">Maname Stage Drama</a></li>
-          <li><a href="blog.html">MIYASI GEE Musical Show</a></li>
-          <li><a href="blog.html">We are family Movie</a></li>
-          <li><a href="blog.html">NAAdanu Cultural Show</a></li>
-          <li><a href="contact.html">Ridee rayak</a></li>
+          <!-- <?php
+            foreach ($returndata->result() as $r) {
+              echo "<li>".print_r ($r->event_name)."</li>";
+            }
+          ?> -->
+
         </ul>
         <div class="footer-pic"><img src="<?php echo base_url(); ?>public/images/f-icon.png" alt=""></div>
         <div class="clear"></div>
@@ -214,6 +221,4 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     </div>
 
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"26612e640c","applicationID":"3365418","transactionName":"NVVXMUVWVkMHBRUPXgwfYBdeGFxVCwkSSVgMVFAdGUdQQA==","queueTime":0,"applicationTime":1,"atts":"GRJURw1MRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
-
-<!-- Mirrored from p.w3layouts.com/demos/events_club/web/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 01:27:34 GMT -->
 </html>

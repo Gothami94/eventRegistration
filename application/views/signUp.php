@@ -13,13 +13,29 @@
         <title>Namel Malani Punchi Theatre | Login</title>
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/login-file.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/signup.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
+
+        <style>
+            .error {color: #FF0000;}
+            .button3{
+                background-color: #00008b;
+                border: none;
+                color: white;
+                padding: 5px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
     </head>
 
     <body>
 
         <div class="top-content" style="margin-bottom:-50px !important;">
-
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
@@ -27,8 +43,7 @@
                             <center>
                                 <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:50px;" class="img-responsive" />
                             </center>
-
-                            <h1>Namel Malani Punchi Theatre | Online Event Club</h1>
+                            <h1>Namel Malani Punchi Theatre | Online</h1>
                             <div class="description">
                             	<p>
                                     Sign Up here
@@ -37,35 +52,51 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-sm-6 col-sm-offset-3 form-box" >
-
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
                             <div class="alert alert-danger alert-dismissible" role="alert" <?php if(!isset($_GET['login'])){ echo "style='display:none;'";}?> >
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                 <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong> Invalid login, please try again
                             </div>
 
-                        	<div class="form-top">
-                        		<div class="form-top-left" >
-                        			<h3>Sign Up!</h3>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
-                            </div>
-                            <div class="form-bottom">
-			                    <form role="form" action="login.php" method="post" class="login-form">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username">User name</label>
-			                        	<input type="text" name="user_name" placeholder="User name" class="form-username form-control" id="form-username" required>
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password" required>
-			                        </div>
-                                    <a href="<?php echo base_url(); ?>index.php/test/view/forget_password.php"><h5 class="form-top1">Forget your password?</h5></a>
-                                    <a href="<?php echo base_url(); ?>index.php/test/view/signUp.php"><h5 class="form-top1">Create account</h5></a>
-			                        <button type="submit" class="btn">Sign in!</button>
-			                    </form>
+                          <div class="form-bottom" >
+                            <form method="post" action="<?php echo base_url(); ?>application/models/signUp.php" name="signUp">
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label> Name</label><span class="error">*</span></div>
+                                    <div class="col-sm-8"><input type="text" class="form-control" id="name" name="cus_name" placeholder="Name" required></div><br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label>User Name</label><span class="error">*</span></div>
+                                    <div class="col-sm-8"><input type="text" class="form-control" id="user_name" name="user_name" placeholder="User name" required></div><br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label>Password</label> <span class="error">*</span></div>
+                                    <div class="col-sm-8"><input type="password" class="form-control" id="passwrd" name="password"  placeholder="*******" required></div><br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label>Contact Number</label><span class="error">*</span></div>
+                                    <div class="col-sm-8"><input type="text" class="form-control" id="contact_nmber" name="contact_nmbr"  placeholder="Contact number" required></div><br>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label>Email</label><span class="error">*</span></div>
+                                    <div class="col-sm-8"><input type="text" class="form-control" id="email" name="email"  placeholder="Email" required></div><br>
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4" style="font-size:15px;"><label>Provider</label><span class="error">*</span></div>
+                                    <div class="col-sm-8"><select  name="provider" class="form-control" required>
+                                        <option value="NULL">If you are a provider select a category</option>
+                                        <option value="Catering">Catering</option>
+                                        <option value="Sounds and Lightning">Sounds and Lightning</option>
+                                        <option value="Photography">Photography</option>
+                                        <option value="Decoration">Decoration</option>
+                                        <option value="Invitation">Invitation</option>
+                                    </select></div><br><br>
+                                </div>
+
+                                <button type="submit" name="submit" class="btn">Sign up!</button>
+
+                                </form>
+
 		                    </div>
                         </div>
                     </div>
