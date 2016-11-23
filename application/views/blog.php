@@ -79,7 +79,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					 </div>
 				  <div class="menu">
 					<ul>
-						<li><a href="<?php echo base_url(); ?>index.php/test/view/index-2">HOME</a></li>
+						<li><a href="<?php echo base_url(); ?>index.php/Welcome2/index/index-2">HOME</a></li>
 				    <li><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
