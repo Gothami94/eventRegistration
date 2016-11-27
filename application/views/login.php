@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/login-file.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
+
+        <style>
+            .error {color: #FF0000;}
+        </style>
     </head>
 
     <body>
@@ -37,8 +41,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" style=" border-style: solid #fff !important;">
-                        <div class="col-sm-6 col-sm-offset-3 form-box" style=" border-style: solid #fff !important;">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box" style="background-color:#ffffff !important;">
                           <?php
                             if ($data) { ?> <CENTER><h3 style="color:green;">You are login successfully!</h3></CENTER><br><?php }?>
 
@@ -46,22 +50,22 @@
                         		<div class="form-top-left" >
                         		  <h3>Login to our site</h3>
                             	<p>Enter your User-name and password to log on:</p>
-                        		</div>  
+                        		</div>
 
                             </div>
                             <div class="form-bottom" >
 			                    <form action="<?php echo base_url(); ?>index.php/Login/login_query" method="post" name="login">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username">User name</label>
-			                        	<input type="text" name="user_name" placeholder="User name" class="form-username form-control" id="form-username" required>
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password" required>
-			                        </div>
+                            <div class="form-group">
+                                <div class="col-sm-4" style="font-size:15px;"><label>User Name</label><span class="error">*</span></div>
+                                <div class="col-sm-8"><input type="text" class="form-control" id="user_name" name="user_name" placeholder="User name" required></div><br>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4" style="font-size:15px;"><label>Password</label> <span class="error">*</span></div>
+                                <div class="col-sm-8"><input type="password" class="form-control" id="passwrd" name="password"  placeholder="*******" required></div><br>
+                            </div>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/forget_password"><h5 class="form-top1">Forget your password?</h5></a>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/signUp"><h5 class="form-top1">Create account</h5></a>
-			                        <button type="submit" class="btn">Sign in!</button>
+			                        <center><button type="submit" class="btn">Sign in!</button></center>
 			                    </form>
 		                    </div>
                         </div>

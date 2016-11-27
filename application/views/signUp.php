@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="row" >
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        <div class="col-sm-6 col-sm-offset-3 form-box" style="background-color:#ffffff !important;">
                         <?php if (isset($message)) { ?>
                           <CENTER><h3 style="color:green;">Your accout created successfully!</h3></CENTER><br>
                         <?php } ?>
@@ -93,7 +93,7 @@
                                     </select></div><br><br>
                                 </div>
 
-                                <button type="submit" name="submit" class="btn">Sign up!</button>
+                                <center><button type="submit" name="submit" class="btn">Sign up!</button></center>
 
                                 </form>
 

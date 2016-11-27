@@ -68,23 +68,24 @@ img { max-width: 100%; }
 .form-box {
     margin-top: 15px;
     border-radius: 30px ;
-    border: 1px solid #fff !important;
+    background: :#ffffff !important;
+    border: 2px solid #808080 !important;
 }
 
 .form-top {
     overflow: hidden;
     padding: 0 25px;
     -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
-    color: #fff;
+    color: #888;
     text-align: left;
 }
 
 .form-top1 {
-    color: #fff;
+    color: #0000cc;
     text-align: right;
 }
 .form-top1:hover {
-    color: #e3e3e3;
+    color: #0000cc;
     text-align: right;
 }
 
@@ -94,14 +95,14 @@ img { max-width: 100%; }
     padding-top: 25px;
 }
 
-.form-top-left h3 { margin-top: 0; color: #fff; }
+.form-top-left h3 { margin-top: 0; color: #888; }
 
 .form-top-right {
     float: left;
     width: 100%;
     padding-top: 5px;
     font-size: 66px;
-    color: #fff;
+    color: #888;
     line-height: 100px;
     text-align: right;
 }
@@ -151,8 +152,8 @@ input[type="password"] {
     margin: 0;
     padding: 0 20px;
     vertical-align: middle;
-    background: none;
-    border: 3px solid #ffffff;
+    background: #fff;
+    border: 1px solid #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -166,8 +167,8 @@ input[type="password"] {
 input[type="text"]:focus,input[type="email"]:focus,
 input[type="password"]:focus {
     outline: 0;
-    background: none;
-    border: 3px solid #fff;
+    background: #ffffff;
+    border: 2px solid #000;
     color: #808080;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
@@ -192,10 +193,11 @@ input[type="password"]::-webkit-input-placeholder, input[type="password"]::-webk
 
 
 button.btn {
-    width: 100%;
+    width: 50%;
     height: 50px;
     margin: 0;
     padding: 0 20px;
+    align: center;
     vertical-align: middle;
     background: #191970;
     border: 0;
