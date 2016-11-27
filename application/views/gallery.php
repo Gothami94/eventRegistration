@@ -26,8 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<!-- Eng Light Box ------>
-</head>
-<body>
+
 <script src='../../../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,7 +55,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     });
 
   </script>
-<body>
 
 
 <script async src='../../../../pagead2.googlesyndication.com/pagead/js/f.txt'></script>
@@ -78,13 +76,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-  </div>
-  </div>
+</head>
+<body>
 
       <div class="header">
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
+           <b>Namel Malani Punchi Theatre</b><br>
 					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">

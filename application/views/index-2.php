@@ -47,8 +47,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     });
 
   </script>
-<body>
-
 
 <script async src='../../../../pagead2.googlesyndication.com/pagead/js/f.txt'></script>
 <!-- Responsive -->
@@ -69,13 +67,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-  </div>
-  </div>
-
+</head>
+<body>
       <div class="header">
 		     <div class="header_top">
 		     	<div class="wrap">
 				 <div class="logo">
+           <b>Namel Malani Punchi Theatre</b><br>
 					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img  class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
 					 </div>
 				  <div class="menu">
@@ -171,9 +169,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
  					<a href="#" class="button">View More</a>
  				</div>
 					<div class="col_1_of_3 span_1_of_3">
-						<a href="<?php echo base_url(); ?>index.php/test/view/login" class="button">Buy Tickets >></a><br>
-            <a href="<?php echo base_url(); ?>index.php/test/view/login" class="button">Register Your Event >></a><br>
-            <a href="<?php echo base_url(); ?>index.php/test/view/login" class="button">As a Supplier >></a><br>
+						<a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1">Buy Tickets >></a><br>
+            <a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1">Register Your Event >></a><br>
+            <a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1">As a Supplier >></a><br>
 					</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Videos</h3>
