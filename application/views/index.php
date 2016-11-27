@@ -81,7 +81,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					</div>
 				  <div class="menu">
 					<ul>
-						<li class="active"><a href="<?php echo base_url(); ?>index.php/Welcome2/index/index-2">HOME</a></li>
+						<li class="active"><a href="<?php echo base_url(); ?>index.php/Welcome/index">HOME</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
 				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
@@ -157,7 +157,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				    </div>
 				    </a>
 				</div>
+
+          <a href="<?php echo base_url(); ?>index.php/test/view/events" class="button">View More >></a>
+
 			</div>
+
 			<!---728x90--->
 			 <div class="content_bottom">
 			 <div class="section group">
@@ -177,7 +181,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
           <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>As a Supplier >></h4></a></center><br>
         </div></center>
 				<div class="col_1_of_3 span_1_of_3">
-					<h3>Latest Videos</h3>
+					<h3>Latest Video</h3>
 					  <a href="gallery.html"><img src="<?php echo base_url(); ?>public/images/videos.jpg" alt="" /></a>
 					<p>When you commission a new work of music through LACO’s Sound Investment program, you can get your own answers, straight from the artist’s mouth.. </p>
 					<a href="gallery.html" class="button">See All</a>
