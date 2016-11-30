@@ -34,7 +34,7 @@
     //
     $query = $this->db->query("INSERT INTO customer (cus_name,user_name,password,contact_nmbr,email,provider) VALUES ('$name','$user','$pswd','$nmbr','$email','$provider')");
     return 1;
-    
+
 
   }
 

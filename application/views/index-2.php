@@ -173,7 +173,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				</div>
         <center><div class="col_1_of_3 span_1_of_3 today_show">
           <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>Buy Tickets >></h4></a></center><br><br><br><br>
-          <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>Register Your Event >></h4></a></center><br><br><br><br>
+          <center><a href="<?php echo base_url(); ?>index.php/test/view/eventReg" class="btn1"><h4>Register Your Event >></h4></a></center><br><br><br><br>
           <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>As a Supplier >></h4></a></center><br>
         </div></center>
 				<div class="col_1_of_3 span_1_of_3">
