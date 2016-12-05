@@ -122,7 +122,7 @@
                           echo "<td>"; print_r ($table[$j]->e_date); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->start_time); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->end_time); echo "</td>";
-                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/Update/event/";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
+                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/Update/sel_event/";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
                           echo "<td><a href='delete_event.php?id="; print_r ($table[$j]->event_id); echo "' class='button2'>Delete</a></td>";
                           echo "</tr>";
                           $i-=1;

@@ -3,26 +3,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Update extends CI_Controller {
 
-	public function event($param)
+	public function upd_event()
+	{
+		$this->load->helper('html');
+		$this->load->helper('url');
+
+		$this->load->model('UpdateModel');
+		$result=$this->UpdateModel->update_event();
+
+		if($result){
+			$this->load->model('RegisterModel');
+			$result=$this->RegisterModel->select_table();
+
+			$table= array();
+			$i = 0;
+			foreach ($result->result() as $row) {
+				$table[$i] = $row;
+				$i +=1;
+			}
+			$data['table']=$table;
+			//Loading View
+
+			$data['message']= 'Event Updated Successfully!';
+			$this->load->view('eventReg',$data);
+		}
+	}
+	public function sel_event($param)
 	{
 		//echo "hello";
 		$this->load->helper('html');
 		$this->load->helper('url');
 
-
 		$id = $param;
-		//echo "$id";
-		$result = false;
-		$result = mysqli_query($conn,"SELECT * FROM event WHERE event_id=$id");
-		$row = $result->fetch_object()
-
 
 		$this->load->model('UpdateModel');
-		$val=$this->UpdateModel->update_event();
+		$sel_result=$this->UpdateModel->select_event($id);
 
 		$table= array();
 		$i = 0;
-		foreach ($result->result() as $row) {
+		foreach ($sel_result->result() as $row) {
 			$table[$i] = $row;
 			$i +=1;
 		}
@@ -30,7 +49,8 @@ class Update extends CI_Controller {
 		//Loading View
 
 		$data['message']= 'Event Updated Successfully!';
-		$this->load->view('eventReg',$data);
+
+		$this->load->view('updateEvent',$data);
 
 	}
 
