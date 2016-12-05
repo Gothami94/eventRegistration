@@ -20,12 +20,6 @@
 
 		<div class="col-xs-4 text-left">
 			<h3>Update Event</h3>
-			<?php
-			$id = $_GET['id'];
-			$result = false;
-			$result = mysqli_query($conn,"SELECT * FROM event WHERE event_id=$id");
-			$row = $result->fetch_object()
-			?>
 
 			<form method="post" action="update_event.php" name="updateEvent">
 				<div class="form-group">

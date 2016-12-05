@@ -34,9 +34,9 @@
 
         <div class="col-xs-4 text-left">
             <br><br>
-          <center><h3>Add Event</h3></center>
+          <center><h3 style="color:#ffffff;">Add Event</h3></center>
 
-            <form method="post" action="<?php echo base_url(); ?>index.php/Register/event" name="updateEvent">
+            <form method="post" action="<?php echo base_url(); ?>index.php/Register/event" name="updateEvent" style="color:#ffffff;">
                 <div class="form-group">
                     <label>Event Name</label><span class="error">*</span><br>
                     <input type="text" class="form-control" id="name" name="event_name" placeholder="event name" required>
@@ -92,9 +92,9 @@
         <div class="row content">
 
 
-        <center><h3>Show Student</h3></center>
+        <center><h3 style="color:#ffffff;">Show Student</h3></center>
 
-                  <center><table>
+                  <center><table  style="color:#ffffff;">
                           <tr style= "border-bottom:1px solid #000000;height:10px">
                               <th style= "width:150px">Event Name</th>
                               <th style= "width:150px">Event Provider</th>
@@ -122,7 +122,7 @@
                           echo "<td>"; print_r ($table[$j]->e_date); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->start_time); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->end_time); echo "</td>";
-                          echo "<td><a href='update_view.php?id=";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
+                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/Update/event/";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
                           echo "<td><a href='delete_event.php?id="; print_r ($table[$j]->event_id); echo "' class='button2'>Delete</a></td>";
                           echo "</tr>";
                           $i-=1;
