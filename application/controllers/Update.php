@@ -27,7 +27,9 @@ class Update extends CI_Controller {
 			$data['message']= 'Event Updated Successfully!';
 			$this->load->view('eventReg',$data);
 		}
+
 	}
+
 	public function sel_event($param)
 	{
 		//echo "hello";
@@ -47,8 +49,6 @@ class Update extends CI_Controller {
 		}
 		$data['table']=$table;
 		//Loading View
-
-		$data['message']= 'Event Updated Successfully!';
 
 		$this->load->view('updateEvent',$data);
 

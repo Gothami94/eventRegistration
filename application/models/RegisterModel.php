@@ -19,7 +19,7 @@ class RegisterModel extends CI_Model
 
 
         $sql = $this->db->query("INSERT INTO event (event_name,event_provider,category,e_date,start_time,end_time) VALUES ('$name','$provider','$category','$date','$stime','$etime')");
-
+        return 1;
       }
 
     }

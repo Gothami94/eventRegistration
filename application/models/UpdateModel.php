@@ -19,7 +19,7 @@ class UpdateModel extends CI_Model
         $etime = $_POST['end_time'];
 
         $sql = $this->db->query("UPDATE event SET event_name='$name',event_provider='$provider',category='$category',e_date='$date',start_time='$stime',end_time='$etime' WHERE event_id=$e_id");
-				return TRUE;
+				return 1;
       }
 			return FALSE;
 

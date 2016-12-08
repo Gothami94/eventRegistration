@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/css/styleCSS.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/signup.css">
+
 
   <style>
       .error {color: #FF0000;}
@@ -31,58 +33,89 @@
 
 <div class="container-fluid text-center">
 	<div class="row content">
-		<div class="col-xs-4 sidenav">
+    <br><br>
+		<div class="col-xs-3 sidenav">
 		</div>
 
-		<div class="col-xs-4 text-left">
-			<h3 style="color:#ffffff;">Update Event</h3>
+		<div class="col-xs-6 text-left">
+      <div class="col-sm-12 form-box" style="background-color:#ffffff !important;">
+        <center><h3 style="color:#555;">UpdateEvent</h3></center>
+        <?php if (isset($message)) { ?>
+          <CENTER><h3 style="color:green;">Event Updated successfully!</h3></CENTER><br>
+        <?php } ?>
+        <br>
+			<form method="post" action="<?php echo base_url(); ?>index.php/Update/upd_event" name="updateEvent" style="color:#555;">
+        <div class="form-group">
+          <div class="col-sm-4" style="font-size:15px;">
+            <b>Event Id</b><span class="error">*</span>
+          </div><div class="col-sm-8">
+            <input type="text" class="form-control" id="id" name="event_id" value="<?php  print_r ($table[0]->event_id); ?>" readonly="">
+          </div><br>
+        </div>
 
-			<form method="post" action="<?php echo base_url(); ?>index.php/Update/upd_event" name="updateEvent" style="color:#ffffff;">
-				<div class="form-group">
-					<label>Event Id</label><br>
-					<input type="text" class="form-control" id="id" name="event_id" value="<?php  print_r ($table[0]->event_id); ?>" readonly>
-				</div>
-				<div class="form-group">
-					<label>Event Name</label><br>
-					<input type="text" class="form-control" id="name" name="event_name" value="<?php  print_r ($table[0]->event_name); ?>" required>
-				</div>
-				<div class="form-group">
-					<label>Event Provider</label><br>
-					<input type="text" class="form-control" id="provider" name="event_provider" value="<?php  print_r ($table[0]->event_provider); ?>" required>
-				</div>
-				<div class="form-group">
-					<label>Category</label><br>
-					<select  name="category" class="form-control" required>
-						<option value="Dancing Show">Dancing Show</option>
-						<option value="Cultural Show">Cultural Show</option>
-						<option value="Movie">Movie</option>
-						<option value="Stage Drama">Stage Drama</option>
-						<option value="Music Event">Music Event</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label>Date</label> <br>
-                    <input type="date" class="form-control" id="date" name="e_date" value="<?php  print_r ($table[0]->e_date); ?>" required>
-				</div>
-				<div class="form-group">
-					<label>Start time</label><br>
-                    <input type="time" class="form-control" id="stime" name="start_time" value="<?php  print_r ($table[0]->start_time); ?>" required>
+        <div class="form-group">
+          <div class="col-sm-4" style="font-size:15px;">
+            <b>Event Name</b><span class="error">*</span>
+          </div><div class="col-sm-8">
+            <input type="text" class="form-control" id="name" name="event_name" value="<?php  print_r ($table[0]->event_name); ?>" required>
+          </div><br>
+        </div>
 
-				</div>
-				<div class="form-group">
-					<label>End time</label><br>
-                    <input type="time" class="form-control" id="etime" name="end_time" value="<?php  print_r ($table[0]->end_time); ?>" required>
+        <div class="form-group">
+          <div class="col-sm-4" style="font-size:15px;">
+            <b>Event Provider</b><span class="error">*</span>
+          </div><div class="col-sm-8">
+            <input type="text" class="form-control" id="provider" name="event_provider" value="<?php  print_r ($table[0]->event_provider); ?>" required>
+          </div><br>
+        </div>
 
-				</div>
-				<button type="submit"  name="save" class="button1">Save</button>
-        <a href="<?php echo base_url(); ?>index.php/Register/event" class="button2">Back</a>
+        <div class="form-group">
+          <div class="col-xs-4" style="font-size:15px;">
+           <b>Category</b><span class="error">*</span>
+          </div><div class="col-xs-8">
+            <select  name="category" class="form-control" required>
+                <option value="Dancing Show">Dancing Show</option>
+                <option value="Cultural Show">Cultural Show</option>
+                <option value="Movi">Movie</option>
+                <option value="Stage Drama">Stage Drama</option>
+                <option value="Music Event">Music Event</option>
+                <option value="Occasion">Occasion</option>
+            </select>
+          </div><br>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-4" style="font-size:15px;">
+            <b>Date</b><span class="error">*</span>
+          </div><div class="col-xs-8">
+            <input type="date" class="form-control" id="date" value="<?php  print_r ($table[0]->e_date); ?>" required>
+          </div><br>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-4" style="font-size:15px;">
+             <b>Start time<b><span class="error">*</span>
+          </div><div class="col-xs-8">
+            <input type="time" class="form-control" id="stime" value="<?php  print_r ($table[0]->start_time); ?>" required>
+          </div><br>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-4" style="font-size:15px;">
+            <b>End time<b><span class="error">*</span>
+          </div><div class="col-xs-8">
+            <input type="time" class="form-control" id="etime" value="<?php  print_r ($table[0]->end_time); ?>" required>
+          </div><br>
+        </div>
+			<center>	<button type="submit"  name="save" class="button1">Save</button>
+        <a href="<?php echo base_url(); ?>index.php/Register/event" class="button2">Back</a> </center>
 
 			</form>
-
+    </div>
 
 		</div>
 
-		<div class="col-xs-4 sidenav">
+		<div class="col-xs-3 sidenav">
 		</div>
 
 	</div>

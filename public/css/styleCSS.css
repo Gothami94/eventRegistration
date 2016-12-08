@@ -39,13 +39,14 @@
 
 	.button1 {
 		background-color: #4CAF50;
+    width: 100px;
 		border: none;
 		color: white;
 		padding: 5px 10px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 10px;
+		font-size: 13px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -53,13 +54,14 @@
 
 	.button2 {
 		background-color: #DC143C;
+    width: 100px;
 		border: none;
 		color: white;
 		padding: 5px 10px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 10px;
+		font-size: 13px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}

@@ -6,7 +6,10 @@
   <title>Namel Malini Theatre</title>
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/signup.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/styleCSS.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/icon.css">
+
     <style>
         .error {color: #FF0000;}
         .button3{
@@ -29,24 +32,39 @@
 
     <div class="container-fluid text-center">
       <div class="row content">
-        <div class="col-xs-4 sidenav">
+          <br><br>
+        <div class="col-xs-3 sidenav">
         </div>
 
-        <div class="col-xs-4 text-left">
-            <br><br>
-          <center><h3 style="color:#ffffff;">Add Event</h3></center>
+        <div class="col-xs-6 text-left">
 
-            <form method="post" action="<?php echo base_url(); ?>index.php/Register/event" name="updateEvent" style="color:#ffffff;">
+          <div class="col-sm-12 form-box" style="background-color:#ffffff !important;">
+            <center><h3 style="color:#555;">Add Event</h3></center>
+            <?php if (isset($message)) { ?>
+              <CENTER><h3 style="color:green;"><?php echo "$message"; ?></h3></CENTER><br>
+            <?php } ?>
+            <br>
+            <form method="post" action="<?php echo base_url(); ?>index.php/Register/event" name="regEvent" style="color:#555;">
                 <div class="form-group">
-                    <label>Event Name</label><span class="error">*</span><br>
+                  <div class="col-sm-4" style="font-size:15px;">
+                    <b>Event Name</b><span class="error">*</span>
+                  </div><div class="col-sm-8">
                     <input type="text" class="form-control" id="name" name="event_name" placeholder="event name" required>
+                  </div><br>
                 </div>
+
                 <div class="form-group">
-                    <label>Event Provider</label><span class="error">*</span><br>
+                  <div class="col-sm-4" style="font-size:15px;">
+                    <b>Event Provider</b><span class="error">*</span>
+                  </div><div class="col-sm-8">
                     <input type="text" class="form-control" id="provider" name="event_provider" placeholder="event provider" required>
+                  </div><br>
                 </div>
+
                 <div class="form-group">
-                    <label>Category</label><span class="error">*</span><br>
+                  <div class="col-xs-4" style="font-size:15px;">
+                   <b>Category</b><span class="error">*</span>
+                  </div><div class="col-xs-8">
                     <select  name="category" class="form-control" required>
                         <option value="Dancing Show">Dancing Show</option>
                         <option value="Cultural Show">Cultural Show</option>
@@ -55,46 +73,64 @@
                         <option value="Music Event">Music Event</option>
                         <option value="Occasion">Occasion</option>
                     </select>
+                  </div><br>
                 </div>
+
                 <div class="form-group">
-                    <label>Date</label> <span class="error">*</span><br>
+                  <div class="col-xs-4" style="font-size:15px;">
+                    <b>Date</b><span class="error">*</span>
+                  </div><div class="col-xs-8">
                     <input type="date" class="form-control" id="date" name="e_date" required>
+                  </div><br>
                 </div>
+
                 <div class="form-group">
-                    <label>Start time</label><span class="error">*</span><br>
+                  <div class="col-xs-4" style="font-size:15px;">
+                     <b>Start time<b><span class="error">*</span>
+                  </div><div class="col-xs-8">
                     <input type="time" class="form-control" id="stime" name="start_time" required>
-
+                  </div><br>
                 </div>
+
                 <div class="form-group">
-                    <label>End time</label><span class="error">*</span><br>
+                  <div class="col-xs-4" style="font-size:15px;">
+                    <b>End time<b><span class="error">*</span>
+                  </div><div class="col-xs-8">
                     <input type="time" class="form-control" id="etime" name="end_time" required>
-
+                  </div><br>
                 </div>
-                <button type="submit"  name="submit" class="button">Register</button>
+
+                <center><button type="submit"  name="submit" class="button">Register</button></center>
 
 
                 </form>
+              </div>
+            </div>
 
-        </div>
           <div class="col-xs-1 sidenav">
           </div>
 
-          <div class="col-xs-3 sidenav">
+          <div class="col-xs-2">
               <form action="<?php echo base_url(); ?>index.php/Register/search" method="post">
-                  <input type="text" class="form-control" name="term" placeholder="event name">
+                <div class="icon-addon addon-md">
+                    <input type="text" placeholder="Search" class="form-control" id="email">
+                    <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                </div>
                   <button type="submit"  name="search" class="button3">Search</button>
               </form>
           </div>
-      </div>
-    </div>
+
+
+  </div>
+</div>
 
     <div class="container-fluid text-center">
         <div class="row content">
 
 
-        <center><h3 style="color:#ffffff;">Show Student</h3></center>
+        <center><h3 style="color:#dcdcdc;">Registered Events</h3></center>
 
-                  <center><table  style="color:#ffffff;">
+                  <center><table  style="color:#dcdcdc;">
                           <tr style= "border-bottom:1px solid #000000;height:10px">
                               <th style= "width:150px">Event Name</th>
                               <th style= "width:150px">Event Provider</th>
@@ -140,11 +176,5 @@
 
               </div>
           </div>
-
-
-      </div>
-    </div>
-
-
   </body>
 </html>

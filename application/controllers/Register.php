@@ -21,10 +21,12 @@ class Register extends CI_Controller {
 		}
 		$data['table']=$table;
 		//Loading View
+		if ($val) {
+			$data['message']= 'Event Registered Successfully!';
+		}
 
-		$data['message']= 'Event Registered Successfully!';
 		$this->load->view('eventReg',$data);
-	
+
 	}
 
 }

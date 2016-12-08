@@ -62,38 +62,37 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<ins class='adsbygoogle'
+<!-- <ins class='adsbygoogle'
      style='display:inline-block;width:728px;height:90px'
      data-ad-client='ca-pub-9153409599391170'
-     data-ad-slot='6850850687'></ins>
+     data-ad-slot='6850850687'></ins> -->
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 </head>
 <body>
-      <div class="header">
-		     <div class="header_top">
-		     	<div class="wrap">
-				 <div class="logo">
-           <b>Namel Malani Punchi Theatre</b><br>
-					 <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
-					</div>
-				  <div class="menu">
-					<ul>
-						<li class="active"><a href="<?php echo base_url(); ?>index.php/Welcome/index">HOME</a></li>
-				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
-				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
-				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
-				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/blog">BLOG</a></li>
-				    	<li><a href="<?php echo base_url(); ?>index.php/test/view/contact">CONTACT</a></li>
-				    	<div class="clear"></div>
-				    </ul>
-				 </div>
-			     <div class="clear"></div>
-		      </div>
-		  </div>
 		<!-- Slider ---->
+    <div class="header_top">
+     <div class="wrap">
+    <div class="logo">
+      <b>Namel Malani Punchi Theatre</b><br>
+      <a href="<?php echo base_url(); ?>index.php/test/view/index-2"><img class="img1" src="<?php echo base_url(); ?>public/images/logo.png" alt="" /></a>
+     </div>
+     <div class="menu">
+     <ul>
+       <li class="active"><a href="<?php echo base_url(); ?>index.php/Welcome/index">HOME</a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/test/view/about">ABOUT</a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/test/view/events">EVENTS</a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/test/view/gallery">GALLERY</a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/test/view/blog">BLOG</a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/test/view/contact">CONTACT</a></li>
+         <div class="clear"></div>
+       </ul>
+    </div>
+      <div class="clear"></div>
+     </div>
+   </div>
 		<div class="wrap">
 		  <div class="slider">
 	      	<div class="slider-wrapper theme-default">
@@ -104,11 +103,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	                <img src="<?php echo base_url(); ?>public/images/4.jpg" data-thumb="<?php echo base_url(); ?>public/images/4.jpg" alt="" />
 	                 <img src="<?php echo base_url(); ?>public/images/5.jpg" data-thumb="<?php echo base_url(); ?>public/images/5.jpg" alt="" />
 	            </div>
-	        </div>
+       </div>
    		</div>
    	  </div>
 		<!---End Slider ------------>
-  </div>
+
      <div class="main">
      	<div class="wrap">
 		<!---728x90--->
