@@ -58,10 +58,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<ins class='adsbygoogle'
+<!-- <ins class='adsbygoogle'
      style='display:inline-block;width:728px;height:90px'
      data-ad-client='ca-pub-9153409599391170'
-     data-ad-slot='6850850687'></ins>
+     data-ad-slot='6850850687'></ins> -->
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

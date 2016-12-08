@@ -3,32 +3,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
-	public function index()
-	{
-		// $this->load->helper('html');
-		// $this->load->helper('url');
-		//
-		// $this->load->view('login');
-		//echo "hello controll";
+		public function index()
+		{
+			$this->load->helper('html');
+			$this->load->helper('url');
 
-	}
+			//Loading View
+			$this->load->view('login');
+
+		}
 
 			public function login_query()
 			{
-				//echo "hello controll";
 				$this->load->helper('html');
 				$this->load->helper('url');
 
 				$this->load->model('LoginModel');
-				$val=$this->LoginModel->login_query();
+				$val=$this->LoginModel->login();
 
-				echo "val : ".$val;
 				//Loading View
 				if($val){
-
 					$this->load->view('events');
-				}else {
-					$data=0;
+				}
+				else {
+					$data['message']= 'Login failed. Try again!';
 					$this->load->view('login',$data);
 				}
 

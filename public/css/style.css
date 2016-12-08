@@ -26,8 +26,8 @@ a{text-decoration:none;}
 .underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-img{max-width:80%;max-height:500px;}
-.img1{max-width:200px;max-height:100px;}
+img{max-width:100%;max-height:500px;}
+.img1{max-width:200px;max-height:100px; padding-bottom: 0px; margin-bottom: 0px;}
 /*end reset*/
 @font-face {
       font-family: 'caviar_dreamsregular';
@@ -43,7 +43,7 @@ body{
 	 background-position: center;
 }
 .wrap{
-	width:60%;
+	width:80%;
 	margin: auto;
 	transition:all .2s linear;
 	-moz-transition:all .2s linear;/* firefox */
@@ -260,7 +260,7 @@ body{
 	float:right;
 	font-size:1em;
 	display: inline-block;
-	background:#006600;
+	background:#191970;
 	color: #000000;
 	text-decoration: none;
 	padding:8px 15px;
@@ -272,7 +272,7 @@ body{
 }
 .btn1:hover {
        text-shadow: 0px 0px 1px #000;
-	  background:#000;
+	  background:#006600;
 }
 /*-----------footer--------------*/
 .footer{

@@ -94,7 +94,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
      </div>
    </div>
 		<div class="wrap">
-		  <div class="slider">
+		  <div class="slider" style="margin-left:50px; margin-right:50px;">
 	      	<div class="slider-wrapper theme-default">
 	            <div id="slider" class="nivoSlider">
 	                <img src="<?php echo base_url(); ?>public/images/1.jpg" data-thumb="<?php echo base_url(); ?>public/images/1.jpg" alt="" />
@@ -175,9 +175,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<a href="#" class="button">View More</a>
 				</div>
         <center><div class="col_1_of_3 span_1_of_3 today_show">
-          <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>Buy Tickets >></h4></a></center><br><br><br><br>
+          <center><a href="<?php echo base_url(); ?>index.php/Login" class="btn1"><h4>Buy Tickets >></h4></a></center><br><br><br><br>
           <center><a href="<?php echo base_url(); ?>index.php/Register/event" class="btn1"><h4>Register Your Event >></h4></a></center><br><br><br><br>
-          <center><a href="<?php echo base_url(); ?>index.php/test/view/login" class="btn1"><h4>As a Supplier >></h4></a></center><br>
+          <center><a href="<?php echo base_url(); ?>index.php/Login" class="btn1"><h4>As a Supplier >></h4></a></center><br>
         </div></center>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Latest Video</h3>

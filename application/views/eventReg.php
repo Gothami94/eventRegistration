@@ -49,7 +49,7 @@
                   <div class="col-sm-4" style="font-size:15px;">
                     <b>Event Name</b><span class="error">*</span>
                   </div><div class="col-sm-8">
-                    <input type="text" class="form-control" id="name" name="event_name" placeholder="event name" required>
+                    <input type="text" class="form-control" id="name" name="event_name" placeholder="Event name" required>
                   </div><br>
                 </div>
 
@@ -57,7 +57,7 @@
                   <div class="col-sm-4" style="font-size:15px;">
                     <b>Event Provider</b><span class="error">*</span>
                   </div><div class="col-sm-8">
-                    <input type="text" class="form-control" id="provider" name="event_provider" placeholder="event provider" required>
+                    <input type="text" class="form-control" id="provider" name="event_provider" placeholder="Event provider" required>
                   </div><br>
                 </div>
 

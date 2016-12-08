@@ -44,7 +44,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box" style="background-color:#ffffff !important;">
                           <?php
-                            if ($data) { ?> <CENTER><h3 style="color:green;">You are login successfully!</h3></CENTER><br><?php }?>
+                            if (isset($message)) { ?> <CENTER><h3 style="color:red;">Login failed. Try again!</h3></CENTER><br><?php }?>
 
                         	<div class="form-top" >
                         		<div class="form-top-left" >
@@ -53,7 +53,7 @@
                         		</div>
 
                             </div>
-                            <div class="form-bottom" >
+                          <div class="form-bottom" >
 			                    <form action="<?php echo base_url(); ?>index.php/Login/login_query" method="post" name="login">
                             <div class="form-group">
                                 <div class="col-sm-4" style="font-size:15px;"><label>User Name</label><span class="error">*</span></div>
@@ -65,7 +65,7 @@
                             </div>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/forget_password"><h5 class="form-top1">Forget your password?</h5></a>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/signUp"><h5 class="form-top1">Create account</h5></a>
-			                        <center><button type="submit" class="btn">Sign in!</button></center>
+			                        <center><button type="submit" name="sign" class="btn">Sign in!</button></center>
 			                    </form>
 		                    </div>
                         </div>
