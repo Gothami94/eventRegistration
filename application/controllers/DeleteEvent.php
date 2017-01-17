@@ -26,8 +26,12 @@ class DeleteEvent extends CI_Controller {
 			//Loading View
 
 			$data['message']= 'Event Deleted Successfully!';
-			$this->load->view('eventReg',$data);
+
 		}
+		else{
+			$data['message']= 'Event Not Deleted!';
+		}
+		$this->load->view('eventReg',$data);
 
 	}
 }

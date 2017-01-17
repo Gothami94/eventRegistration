@@ -25,7 +25,21 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+        input#search {
+          background-image: url(../../public/images/search.jpg);
+          background-repeat: no-repeat;
+          text-indent: 20px;
+        }
     </style>
+    <script>
+    function hideIcon(self) {
+      self.style.backgroundImage = 'none';
+    };
+
+    function ConfirmDelete() {
+      return confirm("Are you sure you want to delete?");
+    };
+    </script>
 
 </head>
   <body style="background:url(../../public/images/bg.jpg) no-repeat center fixed;">
@@ -121,8 +135,7 @@
           <div class="col-xs-3">
               <form action="<?php echo base_url(); ?>index.php/Register/search" method="post">
                 <div class="icon-addon addon-md">
-                    <input type="text" placeholder="Search" class="form-control" id="email">
-                    <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                    <input type="text" id="search" name="term" onchange="hideIcon(this);" >
                 </div>
                   <button type="submit"  name="search" class="button3">Search</button>
               </form>
@@ -167,7 +180,7 @@
                           echo "<td>"; print_r ($table[$j]->start_time); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->end_time); echo "</td>";
                           echo "<td><a href='";?><?php echo base_url(); echo "index.php/Update/sel_event/";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
-                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/DeleteEvent/del_event/"; print_r ($table[$j]->event_id); echo "' class='button2'>Delete</a></td>";
+                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/DeleteEvent/del_event/"; print_r ($table[$j]->event_id); echo "' class='button2' Onclick='return ConfirmDelete()'>Delete</a></td>";
                           echo "</tr>";
                           $i-=1;
                           $j+=1;

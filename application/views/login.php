@@ -54,7 +54,7 @@
 
                             </div>
                           <div class="form-bottom" >
-			                    <form action="<?php echo base_url(); ?>index.php/Login/login_query" method="post" name="login">
+			                    <form method="post" action="<?php echo base_url(); ?>index.php/Login/login_query" name="login">
                             <div class="form-group">
                                 <div class="col-sm-4" style="font-size:15px;"><label>User Name</label><span class="error">*</span></div>
                                 <div class="col-sm-8"><input type="text" class="form-control" id="user_name" name="user_name" placeholder="User name" required></div><br>

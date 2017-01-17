@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/signup.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
 
         <style>
             .error {color: #FF0000;}
@@ -78,7 +77,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-4" style="font-size:15px;"><label>Email</label><span class="error">*</span></div>
-                                    <div class="col-sm-8"><input type="text" class="form-control" id="email" name="email"  placeholder="Email" required></div><br>
+                                    <div class="col-sm-8"><input type="email" class="form-control" id="email" name="email"  placeholder="Email" required></div><br>
 
                                 </div>
                                 <div class="form-group">

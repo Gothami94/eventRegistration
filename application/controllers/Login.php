@@ -18,12 +18,24 @@ class Login extends CI_Controller {
 				$this->load->helper('html');
 				$this->load->helper('url');
 
-				$this->load->model('LoginModel');
-				$val=$this->LoginModel->login();
+				//$this->load->model('LoginModel');
+				//$val=$this->LoginModel->login();
+				$val=True;
 
 				//Loading View
 				if($val){
-					$this->load->view('events');
+					$this->load->model('BuyModel');
+					$result=$this->BuyModel->select_table();
+
+					$table= array();
+					$i = 0;
+					foreach ($result->result() as $row) {
+						$table[$i] = $row;
+						$i +=1;
+					}
+					$data['table']=$table;
+
+					$this->load->view('buyTicket',$data);
 				}
 				else {
 					$data['message']= 'Login failed. Try again!';
