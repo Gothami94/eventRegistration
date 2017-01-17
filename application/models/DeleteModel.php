@@ -1,23 +1,14 @@
 <?php
-	$hostname = "localhost";
-	$username = "root";
-	$password = "";
-	$database = "eventreg";
+defined('BASEPATH') OR exit('No direct script access allowed');
+class DeleteModel extends CI_Model
+{
 
-	$conn = mysqli_connect($hostname, $username, $password, $database);
-	// Check connection
-	if (!$conn) {
-		die("Connection failed: " . mysqli_connect_error());
+	function delete_event($id)
+	{
+		$this->load->database();
+		$e_id=$id;
+		$result = $this->db->query("DELETE FROM event WHERE event_id=$e_id LIMIT 1");
+		return $result;
 	}
-
-	$id = $_GET['id'];
-	$result = false;
-	$result = mysqli_query($conn,"DELETE FROM event WHERE event_id=$id");
-
-	header("Location: index.php");
-
-
-	$conn->close();
+}
 ?>
-
-

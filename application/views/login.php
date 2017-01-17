@@ -48,8 +48,8 @@
 
                         	<div class="form-top" >
                         		<div class="form-top-left" >
-                        		  <h3>Login to our site</h3>
-                            	<p>Enter your User-name and password to log on:</p>
+                        		  <h3 style="color:#191970;">Login to our site</h3>
+                            	<p style="color:#191970;">Enter your User-name and password to log on:</p>
                         		</div>
 
                             </div>
@@ -65,7 +65,7 @@
                             </div>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/forget_password"><h5 class="form-top1">Forget your password?</h5></a>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/signUp"><h5 class="form-top1">Create account</h5></a>
-			                        <center><button type="submit" name="sign" class="btn">Sign in!</button></center>
+			                        <center><button type="submit" name="sign" class="btn">Login!</button></center>
 			                    </form>
 		                    </div>
                         </div>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/styleCSS.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/icon.css">
 
+
     <style>
         .error {color: #FF0000;}
         .button3{
@@ -29,14 +30,24 @@
 </head>
   <body style="background:url(../../public/images/bg.jpg) no-repeat center fixed;">
 
+    <div class="top-content" style="margin-bottom:-50px !important;">
+      <div class="inner-bg">
+        <div class="container">
+         <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:-60px;">
+              <center>
+                  <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:80px;" class="img-responsive" />
+              </center>
 
-    <div class="container-fluid text-center">
+              <h1>Namel Malani Punchi Theatre | Online </h1>
+          </div>
+      </div>
       <div class="row content">
           <br><br>
-        <div class="col-xs-3 sidenav">
+        <div class="col-xs-2 sidenav">
         </div>
 
-        <div class="col-xs-6 text-left">
+        <div class="col-xs-7 text-left">
 
           <div class="col-sm-12 form-box" style="background-color:#ffffff !important;">
             <center><h3 style="color:#555;">Add Event</h3></center>
@@ -107,10 +118,7 @@
               </div>
             </div>
 
-          <div class="col-xs-1 sidenav">
-          </div>
-
-          <div class="col-xs-2">
+          <div class="col-xs-3">
               <form action="<?php echo base_url(); ?>index.php/Register/search" method="post">
                 <div class="icon-addon addon-md">
                     <input type="text" placeholder="Search" class="form-control" id="email">
@@ -159,7 +167,7 @@
                           echo "<td>"; print_r ($table[$j]->start_time); echo "</td>";
                           echo "<td>"; print_r ($table[$j]->end_time); echo "</td>";
                           echo "<td><a href='";?><?php echo base_url(); echo "index.php/Update/sel_event/";  print_r ($table[$j]->event_id ); echo "' class='button1'>Update</a></td>";
-                          echo "<td><a href='delete_event.php?id="; print_r ($table[$j]->event_id); echo "' class='button2'>Delete</a></td>";
+                          echo "<td><a href='";?><?php echo base_url(); echo "index.php/DeleteEvent/del_event/"; print_r ($table[$j]->event_id); echo "' class='button2'>Delete</a></td>";
                           echo "</tr>";
                           $i-=1;
                           $j+=1;
@@ -176,5 +184,7 @@
 
               </div>
           </div>
+        </div>
+      </div>
   </body>
 </html>

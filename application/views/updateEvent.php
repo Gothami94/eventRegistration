@@ -31,13 +31,22 @@
 <body style="background:url(<?php echo base_url(); ?>public/images/bg.jpg) no-repeat center fixed;">
 
 
-<div class="container-fluid text-center">
-	<div class="row content">
-    <br><br>
-		<div class="col-xs-3 sidenav">
+  <div class="top-content" style="margin-bottom:-50px !important;">
+    <div class="inner-bg">
+      <div class="container">
+       <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:-60px;">
+            <center>
+                <img src="<?php echo base_url(); ?>public/images/logo.png" style="height:50px; width:80px;" class="img-responsive" />
+            </center>
+
+            <h1>Namel Malani Punchi Theatre | Online </h1>
+        </div>
+    </div>
+		<div class="col-xs-2 sidenav">
 		</div>
 
-		<div class="col-xs-6 text-left">
+		<div class="col-xs-8 text-left">
       <div class="col-sm-12 form-box" style="background-color:#ffffff !important;">
         <center><h3 style="color:#555;">UpdateEvent</h3></center>
         <?php if (isset($message)) { ?>
@@ -115,9 +124,9 @@
 
 		</div>
 
-		<div class="col-xs-3 sidenav">
+		<div class="col-xs-2 sidenav">
 		</div>
-
+  </div>
 	</div>
 </div>
 
