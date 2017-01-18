@@ -18,14 +18,13 @@ class Login extends CI_Controller {
 				$this->load->helper('html');
 				$this->load->helper('url');
 
-				//$this->load->model('LoginModel');
-				//$val=$this->LoginModel->login();
-				$val=True;
+				$this->load->model('LoginModel');
+				$val=$this->LoginModel->login();
 
 				//Loading View
 				if($val){
 					$this->load->model('BuyModel');
-					$result=$this->BuyModel->select_table();
+					$result=$this->BuyModel->buy_ticket();
 
 					$table= array();
 					$i = 0;
@@ -34,6 +33,8 @@ class Login extends CI_Controller {
 						$i +=1;
 					}
 					$data['table']=$table;
+
+					//print_r($data);
 
 					$this->load->view('buyTicket',$data);
 				}

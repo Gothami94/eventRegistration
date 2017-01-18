@@ -17,11 +17,13 @@ class RegisterModel extends CI_Model
         return 1;
       }
     }
+
   function select_table($id)
 	{
     $this->load->database();
     $result = $this->db->query("SELECT * FROM event ORDER BY event_id");
     return $result;
 	}
+
 }
 ?>

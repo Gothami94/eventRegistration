@@ -9,21 +9,25 @@
  	{
 
    	 $this->load->database();
-
     //leave post request
      if(isset($_POST['sign'])) {
         $user = $_POST['user_name'];
         $pswd = $_POST['password'];
-        //$user = strval($user);
+        $user = strval($user);
 
-        //echo "okb";
-        //$result = $this->db->get('customer');
-        $result = $this->db->query("SELECT * FROM customer WHERE user_name=$user LIMIT 1");
-        print_r($result);
-        if($result->password==$pswd){
+        $result = $this->db->query("SELECT * FROM customer WHERE user_name='$user' LIMIT 1");
+
+        $result_1 = $result->result();
+        $hashed_password=$result_1[0]->password;
+        $flag=password_verify($pswd, $hashed_password);
+        // echo $hashed_password;
+        // echo "********";
+        // echo $pswd;
+        // echo "********";
+        // echo $flag;
+        if($flag){
           return 1;
         }else {
-
           return 0;
         }
 

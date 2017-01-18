@@ -14,8 +14,8 @@ class UpdateModel extends CI_Model
         $name = $_POST['event_name'];
         $provider = $_POST['event_provider'];
         $category = $_POST['category'];
-        $date = $_POST['e_date'];
-        $stime = $_POST['start_time'];
+        $date = date($_POST['e_date']);
+        $stime =$_POST['start_time'];
         $etime = $_POST['end_time'];
 
         $sql = $this->db->query("UPDATE event SET event_name='$name',event_provider='$provider',category='$category',e_date='$date',start_time='$stime',end_time='$etime' WHERE event_id=$e_id");

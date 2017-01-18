@@ -97,7 +97,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	    					<div class="blog-leftgrids">
 								<div class="image group">
 									<div class="grid images_3_of_1">
-										<a href="#"><img style="width:100%; height:200px;" src="<?php echo base_url(); ?><?php print_r ($table[$x]->ticket);?>" alt="" /></a>
+										<a href="#"><img style="width:100%; height:200px;" src="<?php echo base_url(); ?><?php print_r ($table[$x]->t_image);?>" alt="" /></a>
 									</div>
 										<div class="grid blog-desc">
 												<h4><span><?php print_r ($table[$x]->event_name);?></span></h4>
@@ -109,7 +109,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                    <div class="row" style="height:50px; margin-left:20px; background-color: #EAECF0; color: #F40712;">
                                            <div class="row">
                                                <div class="col-xs-6">
-                                                   <h3 style="font-family:Calibri; font-size:20px;">Rs.<?php print_r ($table[$x]->t_price);?></h3>
+                                                   <h3 style="font-family:Calibri; color:#DD0C0C; font-size:20px;">Rs.<?php print_r ($table[$x]->price);?>.00</h3>
                                                </div>
                                                <div class="col-xs-6">
                                                  <a href="<?php echo base_url(); ?>index.php/buyTicket/buy"><img style="width:40px; height:40px;" src="<?php echo base_url(); ?>public/images/cart.png" alt="" />
@@ -126,7 +126,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 
 							<!---728x90--->
-							<div class="blog-leftgrids">
+							<!-- <div class="blog-leftgrids">
 								<div class="image group">
 									<div class="grid images_3_of_1">
 										<a href="#"><img src="<?php echo base_url(); ?>public/images/event-img5.jpg" alt=""></a>
@@ -138,7 +138,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 											   <a href="#" class="button">Read More</a>
 									   </div>
 		  						 </div>
-							</div>
+							</div> -->
 					<div class="content-pagenation">
 						<li><a href="#">Frist</a></li>
 						<li class="active"><a href="#">1</a></li>

@@ -112,6 +112,7 @@
         </div>
 
         <a href="<?php echo base_url(); ?>index.php/Register/event" class="button2">Back</a> </center>
+        <a href="<?php echo base_url(); ?>index.php/Welcome/index"><h5 style="color:#0B07F4"><u>Home page</u></h5></a>
 
 			</form>
     </div>

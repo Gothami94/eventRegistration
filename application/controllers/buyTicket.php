@@ -7,7 +7,7 @@ class buyTicket extends CI_Controller {
     $this->load->helper('url');
     $this->load->model('BuyModel');
     $val=$this->BuyModel->buy();
-    $result=$this->RegisterModel->select_table();
+    $result=$this->RegisterModel->buy_ticket();
     $table= array();
     $i = 0;
     foreach ($result->result() as $row) {

@@ -65,6 +65,7 @@
                             </div>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/forget_password"><h5 class="form-top1">Forget your password?</h5></a>
                                     <a href="<?php echo base_url(); ?>index.php/test/view/signUp"><h5 class="form-top1">Create account</h5></a>
+                                    <a href="<?php echo base_url(); ?>index.php/Welcome/index"><h5 class="form-top1">Home page</h5></a>
 			                        <center><button type="submit" name="sign" class="btn">Login!</button></center>
 			                    </form>
 		                    </div>

@@ -11,7 +11,7 @@
     //leave post request
       $name = $_POST['cus_name'];
 			$user = $_POST['user_name'];
-			$pswd = $_POST['password'];
+			$pswd = password_hash($_POST['password'], PASSWORD_DEFAULT);
 			$nmbr = $_POST['contact_nmbr'];
 			$email = $_POST['email'];
 			$provider = $_POST['provider'];

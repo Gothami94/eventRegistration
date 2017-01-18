@@ -97,7 +97,7 @@
           <div class="col-xs-4" style="font-size:15px;">
             <b>Date</b><span class="error">*</span>
           </div><div class="col-xs-8">
-            <input type="date" class="form-control" id="date" value="<?php  print_r ($table[0]->e_date); ?>" required>
+            <input type="date" class="form-control" id="date" name="e_date" value="<?php  print_r ($table[0]->e_date); ?>" required>
           </div><br>
         </div>
 
@@ -105,7 +105,7 @@
           <div class="col-xs-4" style="font-size:15px;">
              <b>Start time<b><span class="error">*</span>
           </div><div class="col-xs-8">
-            <input type="time" class="form-control" id="stime" value="<?php  print_r ($table[0]->start_time); ?>" required>
+            <input type="time" class="form-control" id="stime"  name="start_time" value="<?php  print_r ($table[0]->start_time); ?>" required>
           </div><br>
         </div>
 
@@ -113,12 +113,12 @@
           <div class="col-xs-4" style="font-size:15px;">
             <b>End time<b><span class="error">*</span>
           </div><div class="col-xs-8">
-            <input type="time" class="form-control" id="etime" value="<?php  print_r ($table[0]->end_time); ?>" required>
+            <input type="time" class="form-control" id="etime"  name="end_time" value="<?php  print_r ($table[0]->end_time); ?>" required>
           </div><br>
         </div>
 			<center>	<button type="submit"  name="save" class="button1">Save</button>
         <a href="<?php echo base_url(); ?>index.php/Register/event" class="button2">Back</a> </center>
-
+        <a href="<?php echo base_url(); ?>index.php/Welcome/index"><h5 style="color:#0B07F4"><u>Home page</u></h5></a>
 			</form>
     </div>
 
