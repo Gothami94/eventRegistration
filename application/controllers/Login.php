@@ -24,7 +24,7 @@ class Login extends CI_Controller {
 				//Loading View
 				if($val){
 					$this->load->model('BuyModel');
-					$result=$this->BuyModel->buy_ticket();
+					$result=$this->BuyModel->buy();
 
 					$table= array();
 					$i = 0;

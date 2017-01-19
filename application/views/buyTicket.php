@@ -58,6 +58,40 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<script>
+$(function () {
+  /* BOOTSNIPP FULLSCREEN FIX */
+  if (window.location == window.parent.location) {
+      $('#back-to-bootsnipp').removeClass('hide');
+      $('.alert').addClass('hide');
+  }
+
+  $('#fullscreen').on('click', function (event) {
+      event.preventDefault();
+      window.parent.location = "http://bootsnipp.com/iframe/Q60Oj";
+  });
+
+  $('tbody > tr').on('click', function(event) {
+      event.preventDefault();
+      $('#myModal').modal('show');
+  })
+
+  $('.btn-mais-info').on('click', function(event) {
+      $( '.open_info' ).toggleClass( "hide" );
+  })
+});
+</script>
+
+<style>
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+    tbody > tr {
+      cursor: pointer;
+    }
+    .result{
+      margin-top:20px;
+    }
+</style>
+
 </head>
 <body>
 <div class=row"">
@@ -84,6 +118,77 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
   </div>
 </div>
 
+<!--popup message--->
+<!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+            <h4 class="modal-title" id="myModalLabel"><i class="text-muted fa fa-shopping-cart"></i> <strong>Select Tickets</strong></h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" data-toggle="validator" action="<?php echo base_url(); echo "index.php/buyTicket/buy/"; print_r ($table[$x]->ticket_id);?>" method="post">
+            <table class="pull-left col-md-8 ">
+                 <tbody>
+                     <!-- <tr>
+                         <td class="h6"><strong>Price</strong></td>
+                         <td> </td>
+                         <td class="h5">Rs.<?php //print_r ($table[$x]->price);?>.00</td>
+                     </tr>
+
+                     <tr>
+                         <td class="h6"><strong>Sales end on</strong></td>
+                         <td> </td>
+                         <td class="h5"> <span id="edate"></span></td>
+                     </tr>
+                     <tr>-->
+                         <!-- <td class="h6"><strong>QTY</strong></td>
+                         <td> </td>
+                         <td class="h5">
+                           <select name="qty" class="form-control">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+
+                          </select>
+                        </td>
+                     </tr> -->
+                     <!-- <tr>
+                         <td class="btn-mais-info text-primary">
+                             <i class="open_info fa fa-plus-square-o"></i>
+                             <i class="open_info hide fa fa-minus-square-o"></i> more info
+                         </td>
+                         <td> </td>
+                         <td class="h5"></td>
+                     </tr> -->
+                   </tbody>
+            </table>
+            <tr><td><img style="width:200px; height:40px;" src="<?php echo base_url(); ?>public/images/paypal.jpg" alt="" /></td></tr>
+
+            <div class="col-md-4">
+                <img style="width:100%; height:200px;" src="<?php echo base_url(); ?><?php print_r ($table[$x]->t_image);?>" alt="teste" class="img-thumbnail" />
+            </div>
+
+            <div class="clearfix"></div>
+           <p class="open_info hide"><?php print_r ($table[$x]->description);?></p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-success btn-lg pull-right submit-button" type="submit">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- end popup-->
+
 <div class=row"">
      <div class="main">
      	<div class="wrap">
@@ -94,6 +199,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
               for ($x = 0; $x <= $i; $x++)  {; ?>
 
 					   <!---728x90--->
+             <form>
 	    					<div class="blog-leftgrids">
 								<div class="image group">
 									<div class="grid images_3_of_1">
@@ -101,27 +207,27 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									</div>
 										<div class="grid blog-desc">
 												<h4><span><?php print_r ($table[$x]->event_name);?></span></h4>
-												  <h4><?php print_r ($table[$x]->e_date);?>&nbsp;&nbsp; Provided by <a href="#" class="post"><?php print_r ($table[$x]->event_provider);?></a></h4>
+												  <h4><span><?php print_r ($table[$x]->e_date);?></span>&nbsp;&nbsp; Provided by <a href="#" class="post"><?php print_r ($table[$x]->event_provider);?></a></h4>
 											<p><?php print_r ($table[$x]->description);?></p>
-											   <a href="#">
-                           <div class="row">
-                               <div class="col-sm-3 col-xs-12">
-                                   <div class="row" style="height:50px; margin-left:20px; background-color: #EAECF0; color: #F40712;">
-                                           <div class="row">
-                                               <div class="col-xs-6">
-                                                   <h3 style="font-family:Calibri; color:#DD0C0C; font-size:20px;">Rs.<?php print_r ($table[$x]->price);?>.00</h3>
-                                               </div>
-                                               <div class="col-xs-6">
-                                                 <a href="<?php echo base_url(); ?>index.php/buyTicket/buy"><img style="width:40px; height:40px;" src="<?php echo base_url(); ?>public/images/cart.png" alt="" />
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                             </div>
+								   <a href="#">
+                     <div class="row">
+                         <div class="col-sm-3 col-xs-12">
+                             <div class="row" style="height:50px; margin-left:20px; background-color: #EAECF0; color: #F40712;">
+                                     <div class="row">
+                                         <div class="col-xs-6">
+                                            <h3 style="font-family:Calibri; color:#DD0C0C; font-size:20px;">Rs.<?php print_r ($table[$x]->price);?>.00 </h3>
+                                         </div>
+                                         <div class="col-xs-6">
+                                           <a href="<?php echo base_url(); echo "index.php/buyTicket/buy/"; print_r ($table[$x]->ticket_id);?>"><img style="width:30px; height:30px; margin-top:5px;" src="<?php echo base_url(); ?>public/images/cart.png" alt="" /></a>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                            </a>
 									   </div>
 		  						 </div>
+                 </form>
           <?php  }; ?>
 							</div>
 

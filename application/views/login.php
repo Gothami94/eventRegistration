@@ -43,9 +43,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box" style="background-color:#ffffff !important;">
-                          <?php
-                            if (isset($message)) { ?> <CENTER><h3 style="color:red;">Login failed. Try again!</h3></CENTER><br><?php }?>
-
+                        
                         	<div class="form-top" >
                         		<div class="form-top-left" >
                         		  <h3 style="color:#191970;">Login to our site</h3>
